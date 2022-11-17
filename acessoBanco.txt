@@ -1,0 +1,24 @@
+## Aceso FreeMySqlHosting
+Server: sql10.freemysqlhosting.net
+Name: sql10544776
+Username: sql10544776
+Password: 5eM9Ns4lRb
+Port number: 3306
+
+------------------------------- // ---------------------------
+## Acesso PlanetScale
+
+database: footcup
+username: 32dheyfnkraxcnghe5hd
+host: aws-sa-east-1.connect.psdb.cloud
+password: pscale_pw_qIpFUGGin4bBr129xImqqSxFWLhf9qQsOxsurrQkh8R
+
+------------------------------- // ---------------------------
+## ACESSO GMAIL
+email -> usjt.footcup@gmail.com
+senha -> Krunk3r@
+------------------------------- // ---------------------------
+## ACESSO Planet Scale (Banco-Nuvem)
+email -> usjt.footcup@gmail.com
+senha -> Krunk3r@123
+
