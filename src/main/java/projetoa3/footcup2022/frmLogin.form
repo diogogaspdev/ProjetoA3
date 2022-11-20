@@ -115,9 +115,6 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="D:\lp_dir\USJT\2022_2\ProjetoA3\src\main\java\projetoa3\footcup2022\Imagens\logo.png"/>
-        </Property>
         <Property name="text" type="java.lang.String" value=" "/>
       </Properties>
     </Component>

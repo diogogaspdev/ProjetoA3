@@ -11,7 +11,8 @@ import java.util.Base64;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import projetoa3.footcup2022.DAO.Usuario;
+import projetoa3.footcup2022.Lib.Comum;
+import projetoa3.footcup2022.Lib.Usuario;
 
 /**
  *
@@ -126,10 +127,7 @@ public class frmLogin extends javax.swing.JFrame {
         try {
             String usrNome = jtxtUsuario.getText();
             // Encripta a senha para Hash-256 para realizar a verificação de autenticidade.
-            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
-            byte hashBytes[] = messageDigest.digest(jtxtSenha.getText().getBytes(StandardCharsets.UTF_8));
-            BigInteger noHash = new BigInteger(1, hashBytes);
-            String usrSenha = noHash.toString(16);
+            String usrSenha = Comum.Hash256(jtxtSenha.getText());
 
             Usuario user = new Usuario(usrNome, usrSenha);
             if (user.Autenticar(user)) {
