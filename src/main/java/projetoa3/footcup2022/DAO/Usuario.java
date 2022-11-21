@@ -1,8 +1,14 @@
 package projetoa3.footcup2022.DAO;
 
+import java.security.NoSuchAlgorithmException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import projetoa3.footcup2022.Lib.Comum;
+import projetoa3.footcup2022.Lib.ConexaoBD;
 
 public class Usuario {
 
@@ -37,6 +43,20 @@ public class Usuario {
                 }
                 return mRetorno;
             }
+        }
+    }
+
+    public boolean CadastrarUsuario(String novoUsuario, String novoSenha) throws SQLException {
+        String sql = "INSERT INTO login (cuser, csenha, itpprivilegio) VALUES (?,?,?)";
+        try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setString(1, novoUsuario);
+            ps.setString(2, Comum.Hash256(novoSenha));
+            ps.setString(3, "1");
+            ps.execute();
+            return true;
+        } catch (NoSuchAlgorithmException ex) {
+            ex.printStackTrace();
+            return false;
         }
     }
 }

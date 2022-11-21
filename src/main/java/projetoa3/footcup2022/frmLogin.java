@@ -4,15 +4,9 @@
  */
 package projetoa3.footcup2022;
 
-import java.math.BigInteger;
-import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.util.Base64;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import projetoa3.footcup2022.Lib.Comum;
-import projetoa3.footcup2022.Lib.Usuario;
+import projetoa3.footcup2022.DAO.Usuario;
 
 /**
  *

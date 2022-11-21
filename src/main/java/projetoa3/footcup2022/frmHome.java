@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-import projetoa3.footcup2022.Lib.Usuario;
+import projetoa3.footcup2022.DAO.Usuario;
 
 /**
  *
@@ -22,11 +22,12 @@ public class frmHome extends javax.swing.JFrame {
     public frmHome(Usuario pUser) {
         super("FootCup 2022 - Home Page");
         initComponents();
-        usuario = pUser;
-        preparaHome();
+        preparaHome(pUser);
     }
 
-    private void preparaHome() {
+    private void preparaHome(Usuario pUser) {
+        usuario = pUser;
+
         jlblUser.setText(jlblUser.getText().replace("$usr$", usuario.Nome));
 
         String imgPath = System.getProperty("user.dir") + "/src/main/java/projetoa3/footcup2022/Imagens/usr_";
@@ -44,15 +45,15 @@ public class frmHome extends javax.swing.JFrame {
         }
         jlblUserIcon.setIcon(new ImageIcon(imgPath + usrIcon));
         jlblUserIcon.setToolTipText(credito);
-        
+
         // Se o tipo de privilégio do usuário não for 0 significa que o mesmo não é adm,
         // portanto bloqueamos as funcionalidades de adm.
-        if(usuario.TipoPrivilegio != 0){
+        if (usuario.TipoPrivilegio != 0) {
             jbtnCadTimes.setVisible(false);
             jbtnCadGrp.setVisible(false);
             jbtnSimJogos.setVisible(false);
         }
-        
+
     }
 
     /**
@@ -69,7 +70,7 @@ public class frmHome extends javax.swing.JFrame {
         jbtnSimJogos = new javax.swing.JButton();
         jbtnVisualizarTimes = new javax.swing.JButton();
         jbtnVisualizarGrp = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        jbtnSair = new javax.swing.JButton();
         jlblUserIcon = new javax.swing.JLabel();
         jbtnCadTimes = new javax.swing.JButton();
         jbtnCadGrp = new javax.swing.JButton();
@@ -89,13 +90,18 @@ public class frmHome extends javax.swing.JFrame {
         jbtnSimJogos.setText("Simulador de Jogos");
 
         jbtnVisualizarTimes.setText("Visualizar Times");
+        jbtnVisualizarTimes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnVisualizarTimesActionPerformed(evt);
+            }
+        });
 
         jbtnVisualizarGrp.setText("Visualizar Grupos");
 
-        jButton6.setText("Sair");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        jbtnSair.setText("Sair");
+        jbtnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                jbtnSairActionPerformed(evt);
             }
         });
 
@@ -132,7 +138,7 @@ public class frmHome extends javax.swing.JFrame {
                         .addComponent(jlblUser))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(51, 51, 51)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jbtnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(28, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
@@ -168,7 +174,7 @@ public class frmHome extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jbtnSimJogos, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jbtnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
@@ -178,7 +184,7 @@ public class frmHome extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 361, Short.MAX_VALUE))
+                .addGap(0, 377, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -188,21 +194,29 @@ public class frmHome extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void jbtnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSairActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
         frmLogin frm = new frmLogin();
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_jbtnSairActionPerformed
 
     private void jbtnCadUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnCadUsuarioActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        frmCadUsuario frm = new frmCadUsuario();
+        frmUsuario frm = new frmUsuario();
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
     }//GEN-LAST:event_jbtnCadUsuarioActionPerformed
+
+    private void jbtnVisualizarTimesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnVisualizarTimesActionPerformed
+        // TODO add your handling code here:
+        this.setVisible(false);
+        frmTimes frm = new frmTimes();
+        frm.setLocationRelativeTo(null);
+        frm.setVisible(true);
+    }//GEN-LAST:event_jbtnVisualizarTimesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -235,11 +249,11 @@ public class frmHome extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jbtnCadGrp;
     private javax.swing.JButton jbtnCadTimes;
     private javax.swing.JButton jbtnCadUsuario;
+    private javax.swing.JButton jbtnSair;
     private javax.swing.JButton jbtnSimJogos;
     private javax.swing.JButton jbtnVisualizarGrp;
     private javax.swing.JButton jbtnVisualizarJogos;
