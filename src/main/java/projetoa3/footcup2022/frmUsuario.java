@@ -152,8 +152,7 @@ public class frmUsuario extends javax.swing.JFrame {
         String novoSenha2 = jtxtSenha2.getText();
 
         if (novoSenha1.equals(novoSenha2)) {
-            Usuario objUsuario = new Usuario(novoUsuario, novoSenha1);
-
+            Usuario objUsuario = new Usuario();
             try {
                 objUsuario.CadastrarUsuario(novoUsuario, novoSenha1);
                 JOptionPane.showMessageDialog(null, "Usuario cadastrado com sucesso!");

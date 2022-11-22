@@ -7,6 +7,7 @@ package projetoa3.footcup2022;
 import javax.swing.JOptionPane;
 import projetoa3.footcup2022.Lib.Comum;
 import projetoa3.footcup2022.DAO.Usuario;
+import projetoa3.footcup2022.Lib.Acesso;
 
 /**
  *
@@ -31,23 +32,22 @@ public class frmLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblNome = new javax.swing.JLabel();
+        lblSenha = new javax.swing.JLabel();
         jtxtUsuario = new javax.swing.JTextField();
         btnEntrar = new javax.swing.JButton();
         jtxtSenha = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
+        lblLogo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel2.setText("Usuário");
+        lblNome.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblNome.setText("Usuário");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel3.setText("Senha:");
+        lblSenha.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblSenha.setText("Senha:");
 
-        jtxtUsuario.setText("Digite seu usuário...");
         jtxtUsuario.setNextFocusableComponent(jtxtSenha);
         jtxtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,16 +63,10 @@ public class frmLogin extends javax.swing.JFrame {
             }
         });
 
-        jtxtSenha.setText("         ");
         jtxtSenha.setNextFocusableComponent(btnEntrar);
-        jtxtSenha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtxtSenhaActionPerformed(evt);
-            }
-        });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\lp_dir\\USJT\\2022_2\\ProjetoA3\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\logo2.png")); // NOI18N
-        jLabel1.setText(" ");
+        lblLogo.setIcon(new javax.swing.ImageIcon("D:\\lp_dir\\USJT\\2022_2\\ProjetoA3\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\logo.png")); // NOI18N
+        lblLogo.setText(" ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -87,22 +81,22 @@ public class frmLogin extends javax.swing.JFrame {
                             .addComponent(jtxtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jtxtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)))
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel1))
-                .addContainerGap(49, Short.MAX_VALUE))
+                            .addComponent(lblNome, javax.swing.GroupLayout.Alignment.LEADING)))
+                    .addComponent(lblSenha)
+                    .addComponent(lblLogo))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(38, 38, 38)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addComponent(lblNome)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jtxtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
-                .addComponent(jLabel3)
+                .addComponent(lblSenha)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jtxtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -113,20 +107,16 @@ public class frmLogin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jtxtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtSenhaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtxtSenhaActionPerformed
-
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         try {
-            String usrNome = jtxtUsuario.getText();
+            String usrName = jtxtUsuario.getText();
             // Encripta a senha para Hash-256 para realizar a verificação de autenticidade.
             String usrSenha = Comum.Hash256(jtxtSenha.getText());
-
-            Usuario user = new Usuario(usrNome, usrSenha);
-            if (user.Autenticar(user)) {
+            
+            if (Acesso.Autenticar(usrName, usrSenha)) {
                 this.setVisible(false);
-                frmHome frmHome = new frmHome(user);
+                Acesso.User = new Usuario().getUser(usrName);
+                frmHome frmHome = new frmHome();
                 frmHome.setLocationRelativeTo(null);
                 frmHome.setVisible(true);
             } else {
@@ -183,10 +173,10 @@ public class frmLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEntrar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField jtxtSenha;
     private javax.swing.JTextField jtxtUsuario;
+    private javax.swing.JLabel lblLogo;
+    private javax.swing.JLabel lblNome;
+    private javax.swing.JLabel lblSenha;
     // End of variables declaration//GEN-END:variables
 }

@@ -10,6 +10,7 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import projetoa3.footcup2022.DAO.Usuario;
+import projetoa3.footcup2022.Lib.Acesso;
 
 /**
  *
@@ -19,14 +20,14 @@ public class frmHome extends javax.swing.JFrame {
 
     private Usuario usuario;
 
-    public frmHome(Usuario pUser) {
+    public frmHome() {
         super("FootCup 2022 - Home Page");
         initComponents();
-        preparaHome(pUser);
+        preparaHome();
     }
 
-    private void preparaHome(Usuario pUser) {
-        usuario = pUser;
+    private void preparaHome() {
+        usuario = Acesso.User;
 
         jlblUser.setText(jlblUser.getText().replace("$usr$", usuario.Nome));
 
@@ -115,6 +116,11 @@ public class frmHome extends javax.swing.JFrame {
         jbtnCadGrp.setText("Cadastrar Grupos");
 
         jbtnVisualizarJogos.setText("Visualizar Jogos");
+        jbtnVisualizarJogos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnVisualizarJogosActionPerformed(evt);
+            }
+        });
 
         jbtnCadUsuario.setText("Cadastrar Usuario");
         jbtnCadUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -217,6 +223,11 @@ public class frmHome extends javax.swing.JFrame {
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
     }//GEN-LAST:event_jbtnVisualizarTimesActionPerformed
+
+    private void jbtnVisualizarJogosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnVisualizarJogosActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, Acesso.User.Nome);
+    }//GEN-LAST:event_jbtnVisualizarJogosActionPerformed
 
     /**
      * @param args the command line arguments
