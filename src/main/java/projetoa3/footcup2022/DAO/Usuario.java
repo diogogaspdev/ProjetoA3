@@ -46,17 +46,15 @@ public class Usuario {
         }
     }
 
-    public boolean CadastrarUsuario(String novoUsuario, String novoSenha) throws SQLException {
+    public void CadastrarUsuario(String novoUsuario, String novoSenha) throws SQLException {
         String sql = "INSERT INTO login (cuser, csenha, itpprivilegio) VALUES (?,?,?)";
         try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, novoUsuario);
             ps.setString(2, Comum.Hash256(novoSenha));
             ps.setString(3, "1");
             ps.execute();
-            return true;
         } catch (NoSuchAlgorithmException ex) {
             ex.printStackTrace();
-            return false;
         }
     }
 }

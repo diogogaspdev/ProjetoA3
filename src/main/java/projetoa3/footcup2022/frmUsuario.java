@@ -150,22 +150,20 @@ public class frmUsuario extends javax.swing.JFrame {
         String novoUsuario = jtxtUsuario.getText();
         String novoSenha1 = jtxtSenha1.getText();
         String novoSenha2 = jtxtSenha2.getText();
-        
-        if (novoSenha1.equals(novoSenha2)){
-            Usuario objUsuario = new Usuario(novoUsuario,novoSenha1);
-            
+
+        if (novoSenha1.equals(novoSenha2)) {
+            Usuario objUsuario = new Usuario(novoUsuario, novoSenha1);
+
             try {
-                if(objUsuario.CadastrarUsuario(novoUsuario, novoSenha1))
-                {
-                    JOptionPane.showMessageDialog(null, "Usuario cadastrado com sucesso!");
-                }
+                objUsuario.CadastrarUsuario(novoUsuario, novoSenha1);
+                JOptionPane.showMessageDialog(null, "Usuario cadastrado com sucesso!");
             } catch (SQLException ex) {
                 ex.printStackTrace();
             }
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Erro no cadastro!");
         }
-            
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jtxtSenha2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtSenha2ActionPerformed
