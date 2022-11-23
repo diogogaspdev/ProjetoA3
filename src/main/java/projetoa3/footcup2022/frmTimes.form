@@ -80,8 +80,8 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Visualizar Times">
-                <Property name="tabTitle" type="java.lang.String" value="Visualizar Times"/>
+              <JTabbedPaneConstraints tabName="Visualizar">
+                <Property name="tabTitle" type="java.lang.String" value="Visualizar"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
@@ -167,8 +167,8 @@
         <Container class="javax.swing.JPanel" name="jpnlCrud">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-              <JTabbedPaneConstraints tabName="Add/Edit Time">
-                <Property name="tabTitle" type="java.lang.String" value="Add/Edit Time"/>
+              <JTabbedPaneConstraints tabName="Add/Edit">
+                <Property name="tabTitle" type="java.lang.String" value="Add/Edit"/>
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>

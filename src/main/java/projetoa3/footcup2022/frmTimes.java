@@ -4,19 +4,14 @@
  */
 package projetoa3.footcup2022;
 
-import java.awt.Color;
-import java.io.File;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Enumeration;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.AbstractButton;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.text.JTextComponent;
 import projetoa3.footcup2022.DAO.Time;
 import projetoa3.footcup2022.Lib.Acesso;
 import projetoa3.footcup2022.Lib.Comum;
@@ -142,7 +137,7 @@ public class frmTimes extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jtabMenu.addTab("Visualizar Times", jpnlVisualizarTime);
+        jtabMenu.addTab("Visualizar", jpnlVisualizarTime);
 
         jlblBandeira.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         jlblBandeira.setIcon(new javax.swing.ImageIcon("D:\\lp_dir\\USJT\\2022_2\\ProjetoA3\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\Times\\time_default.png")); // NOI18N
@@ -345,7 +340,7 @@ public class frmTimes extends javax.swing.JFrame {
                 .addGap(14, 14, 14))
         );
 
-        jtabMenu.addTab("Add/Edit Time", jpnlCrud);
+        jtabMenu.addTab("Add/Edit", jpnlCrud);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

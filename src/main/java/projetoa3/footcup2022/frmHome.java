@@ -50,7 +50,6 @@ public class frmHome extends javax.swing.JFrame {
         // Se o tipo de privilégio do usuário não for 0 significa que o mesmo não é adm,
         // portanto bloqueamos as funcionalidades de adm.
         if (usuario.TipoPrivilegio != 0) {
-            jbtnCadTimes.setVisible(false);
             jbtnCadGrp.setVisible(false);
             jbtnSimJogos.setVisible(false);
         }
@@ -73,7 +72,6 @@ public class frmHome extends javax.swing.JFrame {
         jbtnVisualizarGrp = new javax.swing.JButton();
         jbtnSair = new javax.swing.JButton();
         jlblUserIcon = new javax.swing.JLabel();
-        jbtnCadTimes = new javax.swing.JButton();
         jbtnCadGrp = new javax.swing.JButton();
         jbtnVisualizarJogos = new javax.swing.JButton();
         jbtnCadUsuario = new javax.swing.JButton();
@@ -98,6 +96,11 @@ public class frmHome extends javax.swing.JFrame {
         });
 
         jbtnVisualizarGrp.setText("Visualizar Grupos");
+        jbtnVisualizarGrp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnVisualizarGrpActionPerformed(evt);
+            }
+        });
 
         jbtnSair.setText("Sair");
         jbtnSair.addActionListener(new java.awt.event.ActionListener() {
@@ -110,8 +113,6 @@ public class frmHome extends javax.swing.JFrame {
         jlblUserIcon.setForeground(new java.awt.Color(255, 255, 255));
         jlblUserIcon.setText("  ");
         jlblUserIcon.setToolTipText("<a href=\"https://www.flaticon.com/br/icones-gratis/admin\" title=\"admin ícones\">Icone criado por Tanah Basah - Flaticon</a>");
-
-        jbtnCadTimes.setText("Cadastrar Times");
 
         jbtnCadGrp.setText("Cadastrar Grupos");
 
@@ -150,7 +151,6 @@ public class frmHome extends javax.swing.JFrame {
                 .addGap(15, 15, 15)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jbtnCadUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jbtnCadTimes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jbtnVisualizarJogos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jbtnCadGrp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jbtnVisualizarGrp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -160,7 +160,7 @@ public class frmHome extends javax.swing.JFrame {
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(12, 12, 12)
                 .addComponent(jlblUserIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -174,14 +174,12 @@ public class frmHome extends javax.swing.JFrame {
                 .addGap(8, 8, 8)
                 .addComponent(jbtnCadUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jbtnCadTimes, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jbtnCadGrp, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jbtnSimJogos, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
                 .addComponent(jbtnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(9, Short.MAX_VALUE))
+                .addGap(9, 9, 9))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -225,9 +223,14 @@ public class frmHome extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtnVisualizarTimesActionPerformed
 
     private void jbtnVisualizarJogosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnVisualizarJogosActionPerformed
-        // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, Acesso.User.Nome);
     }//GEN-LAST:event_jbtnVisualizarJogosActionPerformed
+
+    private void jbtnVisualizarGrpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnVisualizarGrpActionPerformed
+        this.setVisible(false);
+        frmGrupos frm = new frmGrupos();
+        frm.setLocationRelativeTo(null);
+        frm.setVisible(true);
+    }//GEN-LAST:event_jbtnVisualizarGrpActionPerformed
 
     /**
      * @param args the command line arguments
@@ -262,7 +265,6 @@ public class frmHome extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton jbtnCadGrp;
-    private javax.swing.JButton jbtnCadTimes;
     private javax.swing.JButton jbtnCadUsuario;
     private javax.swing.JButton jbtnSair;
     private javax.swing.JButton jbtnSimJogos;
