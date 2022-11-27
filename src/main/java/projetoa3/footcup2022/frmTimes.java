@@ -100,15 +100,20 @@ public class frmTimes extends javax.swing.JFrame {
 
         jtableTime.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
                 "Id", "Nome", "Grupo", "Continente"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jtableTime.setEditingColumn(0);
         jtableTime.setEditingRow(0);
         jtableTime.setRowHeight(30);
@@ -155,7 +160,7 @@ public class frmTimes extends javax.swing.JFrame {
 
         jLabel2.setText("Grupo do time");
 
-        jcboGrupo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "", "A", "B", "C", "D", "E" }));
+        jcboGrupo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D", "E" }));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Continente"));
 
@@ -396,7 +401,7 @@ public class frmTimes extends javax.swing.JFrame {
         if (Consiste()) {
             String continente = rbtnGrpContinente.getSelection().getActionCommand();
             String bandeira = jlblBandeira.getIcon().toString();
-            bandeira = bandeira.substring(bandeira.lastIndexOf("/") + 1);
+            bandeira = bandeira.substring(bandeira.indexOf("Times") + 6);
 
             Time oTime = new Time();
             oTime.Nome = jtxtNome.getText();
@@ -414,9 +419,13 @@ public class frmTimes extends javax.swing.JFrame {
                     oTime.Atualizar(Integer.parseInt(Id));
                     JOptionPane.showMessageDialog(null, "Time atualizado com sucesso.");
                 }
-                jbtnLimparActionPerformed(evt);
             } catch (SQLException ex) {
+                if (ex.getMessage().contains("times.cnome_UNIQUE")) {
+                    JOptionPane.showMessageDialog(null, "Não é possível incluir " + jtxtNome.getText() + " pois o time já existe.");
+                }
                 ex.printStackTrace();
+            } finally {
+                jbtnLimparActionPerformed(evt);
             }
 
         } else {
@@ -449,6 +458,8 @@ public class frmTimes extends javax.swing.JFrame {
             }
         } catch (SQLException ex) {
             ex.printStackTrace();
+        } finally {
+            jbtnLimparActionPerformed(evt);
         }
     }//GEN-LAST:event_jbtnDeletarActionPerformed
 

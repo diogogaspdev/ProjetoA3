@@ -72,10 +72,8 @@
                   <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jbtnCadUsuario" max="32767" attributes="0"/>
-                      <Component id="jbtnVisualizarJogos" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jbtnCadGrp" alignment="0" max="32767" attributes="0"/>
                       <Component id="jbtnVisualizarGrp" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jbtnSimJogos" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jbtnSimulacaoJogos" alignment="0" max="32767" attributes="0"/>
                       <Component id="jbtnVisualizarTimes" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
@@ -90,18 +88,14 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jlblUser" min="-2" pref="40" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jbtnVisualizarJogos" min="-2" pref="35" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="jbtnVisualizarTimes" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jbtnVisualizarGrp" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                   <Component id="jbtnCadUsuario" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jbtnCadGrp" min="-2" pref="35" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jbtnSimJogos" min="-2" pref="35" max="-2" attributes="0"/>
-                  <EmptySpace pref="47" max="32767" attributes="0"/>
+                  <Component id="jbtnSimulacaoJogos" min="-2" pref="35" max="-2" attributes="0"/>
+                  <EmptySpace pref="129" max="32767" attributes="0"/>
                   <Component id="jbtnSair" min="-2" pref="30" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
               </Group>
@@ -120,9 +114,9 @@
             <Property name="text" type="java.lang.String" value="Bem vindo, $usr$!"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jbtnSimJogos">
+        <Component class="javax.swing.JButton" name="jbtnSimulacaoJogos">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Simulador de Jogos"/>
+            <Property name="text" type="java.lang.String" value="Simular Jogos"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jbtnVisualizarTimes">
@@ -160,19 +154,6 @@
             <Property name="text" type="java.lang.String" value="  "/>
             <Property name="toolTipText" type="java.lang.String" value="&lt;a href=&quot;https://www.flaticon.com/br/icones-gratis/admin&quot; title=&quot;admin &#xed;cones&quot;&gt;Icone criado por Tanah Basah - Flaticon&lt;/a&gt;"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="jbtnCadGrp">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Cadastrar Grupos"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="jbtnVisualizarJogos">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Visualizar Jogos"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnVisualizarJogosActionPerformed"/>
-          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jbtnCadUsuario">
           <Properties>

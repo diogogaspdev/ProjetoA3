@@ -68,6 +68,10 @@ public final class Comum {
     public static void setBandeiraTime(JLabel pLabel, String pBandeira) {
         String imgPath = System.getProperty("user.dir") + "/src/main/java/projetoa3/footcup2022/Imagens/Times/";
         // Instanciamos um objeto do tipo File com o nome 'f'.
+        pBandeira = pBandeira.replace(" ", "-");
+        if (pBandeira.endsWith("-")) {
+            pBandeira = pBandeira.substring(0, pBandeira.length() - 1);
+        }
         File f = new File(imgPath + pBandeira.toLowerCase() + ".png");
         // Verificamos se existe um arquivo dentro da pasta imgPath com o nome de jtxtNome.getText().
         if (f.exists()) {

@@ -52,7 +52,7 @@ public class frmUsuario extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 96, 30));
+        jPanel8.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 96, 30));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Usuario");
@@ -172,7 +172,7 @@ public class frmUsuario extends javax.swing.JFrame {
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        frmLogin frm = new frmLogin();
+        frmHome frm = new frmHome();
         frm.setLocationRelativeTo(null);
         frm.setVisible(true);
     }//GEN-LAST:event_jButton13ActionPerformed
