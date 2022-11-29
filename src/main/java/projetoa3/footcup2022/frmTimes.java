@@ -12,6 +12,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 import javax.swing.table.DefaultTableModel;
+import projetoa3.footcup2022.DAO.Grupo;
 import projetoa3.footcup2022.DAO.Time;
 import projetoa3.footcup2022.Lib.Acesso;
 import projetoa3.footcup2022.Lib.Comum;
@@ -90,7 +91,7 @@ public class frmTimes extends javax.swing.JFrame {
                 jbtnVoltarActionPerformed(evt);
             }
         });
-        jPanel8.add(jbtnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, 96, 30));
+        jPanel8.add(jbtnVoltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, 30));
 
         jpnlVisualizarTime.addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
@@ -131,7 +132,7 @@ public class frmTimes extends javax.swing.JFrame {
             jpnlVisualizarTimeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlVisualizarTimeLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 456, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jpnlVisualizarTimeLayout.setVerticalGroup(
@@ -352,7 +353,7 @@ public class frmTimes extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jtabMenu)
                 .addContainerGap())
@@ -404,8 +405,8 @@ public class frmTimes extends javax.swing.JFrame {
             bandeira = bandeira.substring(bandeira.indexOf("Times") + 6);
 
             Time oTime = new Time();
-            oTime.Nome = jtxtNome.getText();
-            oTime.Grupo = jcboGrupo.getSelectedItem().toString();
+            oTime.Nome = jtxtNome.getText().toUpperCase().charAt(0) + jtxtNome.getText().substring(1, jtxtNome.getText().length());
+            oTime.IdGrupo = jcboGrupo.getSelectedItem().toString();
             oTime.Continente = continente;
             oTime.Bandeira = bandeira;
 
@@ -421,9 +422,11 @@ public class frmTimes extends javax.swing.JFrame {
                 }
             } catch (SQLException ex) {
                 if (ex.getMessage().contains("times.cnome_UNIQUE")) {
-                    JOptionPane.showMessageDialog(null, "Não é possível incluir " + jtxtNome.getText() + " pois o time já existe.");
+                    JOptionPane.showMessageDialog(null, "Não é possível incluir " + jtxtNome.getText() + " pois o time já existe.",
+                            "", JOptionPane.OK_OPTION);
+                } else {
+                    JOptionPane.showMessageDialog(null, ex.getMessage(), "", JOptionPane.OK_OPTION);
                 }
-                ex.printStackTrace();
             } finally {
                 jbtnLimparActionPerformed(evt);
             }
@@ -476,11 +479,10 @@ public class frmTimes extends javax.swing.JFrame {
                     //retorna os dados da tabela do BD, cada campo e um coluna.
                     time.Id,
                     time.Nome,
-                    time.Grupo,
+                    time.IdGrupo,
                     time.Continente
                 });
             }
-
         } catch (Exception ex) {
             ex.printStackTrace();
         }

@@ -30,7 +30,10 @@ public class Grupo {
     public int saldoGols;
     public int qtdJogos;
 
-    public ArrayList<Grupo> Listar(String IdGrupo) throws Exception {
+    public Grupo() {
+    }
+
+    public ArrayList<Grupo> Listar(String IdGrupo) throws SQLException {
 
         String sql = """
                      SELECT t.cnome, t.iidtime, grp.iqtdpts, grp.iqtdjogos, grp.iqtdvitorias, grp.iqtdempates, 
@@ -47,18 +50,18 @@ public class Grupo {
         try ( Connection conexao = ConexaoBD.obtemConexao();  PreparedStatement ps = conexao.prepareStatement(sql)) {
             try ( ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
-                    Grupo oGrupo = new Grupo();
-                    oGrupo.IdGrupo = IdGrupo;
-                    oGrupo.NomeTime = rs.getString("cnome");
-                    oGrupo.IdTime = rs.getInt("iidtime");
-                    oGrupo.qtdPontos = rs.getInt("iqtdpts");
-                    oGrupo.qtdVitorias = rs.getInt("iqtdvitorias");
-                    oGrupo.qtdEmpates = rs.getInt("iqtdderrotas");
-                    oGrupo.qtdGolsMarcados = rs.getInt("iqtdgolspro");
-                    oGrupo.qtdGolsSofridos = rs.getInt("iqtdgolscontra");
-                    oGrupo.saldoGols = rs.getInt("isaldo");
-                    oGrupo.qtdJogos = rs.getInt("iqtdjogos");
-                    lGrupos.add(oGrupo);
+                    Grupo oTime = new Grupo();
+                    oTime.IdGrupo = IdGrupo;
+                    oTime.NomeTime = rs.getString("cnome");
+                    oTime.IdTime = rs.getInt("iidtime");
+                    oTime.qtdPontos = rs.getInt("iqtdpts");
+                    oTime.qtdVitorias = rs.getInt("iqtdvitorias");
+                    oTime.qtdEmpates = rs.getInt("iqtdderrotas");
+                    oTime.qtdGolsMarcados = rs.getInt("iqtdgolspro");
+                    oTime.qtdGolsSofridos = rs.getInt("iqtdgolscontra");
+                    oTime.saldoGols = rs.getInt("isaldo");
+                    oTime.qtdJogos = rs.getInt("iqtdjogos");
+                    lGrupos.add(oTime);
                 }
             }
         }
@@ -74,7 +77,7 @@ public class Grupo {
             throw ex;
         }
     }
-    
+
     public void Atualizar() throws SQLException {
         String sql = "UPDATE footcup.grupos SET cidgrupo = ? WHERE iidtime = ?;";
         try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
@@ -85,23 +88,26 @@ public class Grupo {
             throw ex;
         }
     }
-    
+
     public void Incluir() throws SQLException {
         String sql = "SELECT iidtime FROM times ORDER BY iidtime DESC LIMIT 1;";
-
-        try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
-            try ( ResultSet rs = ps.executeQuery()) {
-                while (rs.next()) {
+        try {// Verifica se já existem mais de 4 times dentro do grupo
+            if (this.Listar(this.IdGrupo).size() < 4) {
+                Connection c = ConexaoBD.obtemConexao();
+                PreparedStatement ps = c.prepareStatement(sql);
+                try ( ResultSet rs = ps.executeQuery()) {
+                    rs.next();
                     this.IdTime = rs.getInt("iidtime");
                 }
+
+                sql = "INSERT INTO grupos (cidgrupo, iidtime, iqtdpts, iqtdvitorias, iqtdempates, iqtdderrotas, iqtdgolspro, iqtdgolscontra, isaldo, iqtdjogos)"
+                        + "VALUES (?, ?, 0, 0, 0, 0, 0, 0, 0, 0);";
+                ps = c.prepareStatement(sql);
+
+                ps.setString(1, this.IdGrupo);
+                ps.setInt(2, this.IdTime);
+                ps.execute();
             }
-        }
-        sql = "INSERT INTO grupos (cidgrupo, iidtime, iqtdpts, iqtdvitorias, iqtdempates, iqtdderrotas, iqtdgolspro, iqtdgolscontra, isaldo, iqtdjogos)"
-                + "VALUES (?, ?, 0, 0, 0, 0, 0, 0, 0, 0);";
-        try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
-            ps.setString(1, this.IdGrupo);
-            ps.setInt(2, this.IdTime);
-            ps.execute();
         } catch (Exception ex) {
             throw ex;
         }

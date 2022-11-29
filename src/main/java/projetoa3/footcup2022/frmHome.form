@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JMenu" name="jMenu1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jMenu1"/>
+        <Property name="actionCommand" type="java.lang.String" value="jbtnSimulacaoJogos"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <MenuItem class="javax.swing.JMenuItem" name="jmitSimularFaseG">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="jMenuItem1"/>
+          </Properties>
+        </MenuItem>
+      </SubComponents>
+    </Container>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="title" type="java.lang.String" value="FootCup2022 - Home"/>
@@ -55,6 +74,16 @@
                   <Component id="jlblUserIcon" min="-2" pref="124" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jbtnCadUsuario" max="32767" attributes="0"/>
+                      <Component id="jbtnVisualizarGrp" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jbtnVisualizarJogos" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jbtnVisualizarTimes" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -63,20 +92,10 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-                          <Component id="jbtnSair" min="-2" pref="96" max="-2" attributes="0"/>
+                          <Component id="jbtnSair" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace pref="28" max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jbtnCadUsuario" max="32767" attributes="0"/>
-                      <Component id="jbtnVisualizarGrp" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jbtnSimulacaoJogos" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jbtnVisualizarTimes" alignment="0" max="32767" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -94,7 +113,7 @@
                   <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                   <Component id="jbtnCadUsuario" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jbtnSimulacaoJogos" min="-2" pref="35" max="-2" attributes="0"/>
+                  <Component id="jbtnVisualizarJogos" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace pref="129" max="32767" attributes="0"/>
                   <Component id="jbtnSair" min="-2" pref="30" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
@@ -114,10 +133,13 @@
             <Property name="text" type="java.lang.String" value="Bem vindo, $usr$!"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jbtnSimulacaoJogos">
+        <Component class="javax.swing.JButton" name="jbtnVisualizarJogos">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Simular Jogos"/>
+            <Property name="text" type="java.lang.String" value="Visualizar Jogos"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnVisualizarJogosActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jbtnVisualizarTimes">
           <Properties>
@@ -137,7 +159,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jbtnSair">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Sair"/>
+            <Property name="text" type="java.lang.String" value="Trocar Usu&#xe1;rio"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnSairActionPerformed"/>

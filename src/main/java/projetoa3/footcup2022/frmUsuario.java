@@ -52,7 +52,7 @@ public class frmUsuario extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
-        jPanel8.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 96, 30));
+        jPanel8.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 96, 30));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("Usuario");
@@ -81,7 +81,7 @@ public class frmUsuario extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Salvar");
+        jButton1.setText("Cadastrar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -117,7 +117,7 @@ public class frmUsuario extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(83, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jtxtUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -131,7 +131,7 @@ public class frmUsuario extends javax.swing.JFrame {
                 .addComponent(jtxtSenha2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addComponent(jButton1)
-                .addGap(69, 69, 69))
+                .addContainerGap())
         );
 
         pack();

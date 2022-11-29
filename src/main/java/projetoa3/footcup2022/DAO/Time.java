@@ -22,11 +22,11 @@ public class Time {
 
     public int Id;
     public String Nome;
-    public String Grupo;
+    public String IdGrupo;
     public String Continente;
     public String Bandeira;
 
-    public ArrayList<Time> Listar(String pCrit) throws Exception {
+    public ArrayList<Time> Listar(String pCrit) throws SQLException {
 
         String sql = "SELECT * FROM footcup.times $pCrit$";
         if (!pCrit.isBlank() || pCrit != null) {
@@ -41,7 +41,7 @@ public class Time {
                     Time oTime = new Time();
                     oTime.Id = rs.getInt("iidtime");
                     oTime.Nome = rs.getString("cnome");
-                    oTime.Grupo = rs.getString("cidgrupo");
+                    oTime.IdGrupo = rs.getString("cidgrupo");
                     oTime.Continente = rs.getString("ccontinente");
                     oTime.Bandeira = rs.getString("cbandeira");
                     lTimes.add(oTime);
@@ -51,7 +51,7 @@ public class Time {
         return lTimes;
     }
 
-    public ArrayList<Time> Listar() throws Exception {
+    public ArrayList<Time> Listar() throws SQLException {
         return this.Listar("");
     }
 
@@ -64,7 +64,7 @@ public class Time {
                     Time oTime = new Time();
                     oTime.Id = rs.getInt("iidtime");
                     oTime.Nome = rs.getString("cnome");
-                    oTime.Grupo = rs.getString("cidgrupo");
+                    oTime.IdGrupo = rs.getString("cidgrupo");
                     oTime.Continente = rs.getString("ccontinente");
                     oTime.Bandeira = rs.getString("cbandeira");
                     return oTime;
@@ -88,18 +88,33 @@ public class Time {
     }
 
     public void Incluir() throws SQLException {
-        String sql = "INSERT INTO times (cnome, cbandeira, cidgrupo, ccontinente) VALUES (?,?,?,?)";
-        try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
-            ps.setString(1, this.Nome);
-            ps.setString(2, this.Bandeira);
-            ps.setString(3, this.Grupo);
-            ps.setString(4, this.Continente);
-            ps.execute();
+        try {
+            int qtdTimesCadastrados = this.Listar().size();
+            int qtdTimesNoGrupo = new Grupo().Listar(this.IdGrupo).size();
+            if (qtdTimesCadastrados < 32 && qtdTimesNoGrupo < 4) {
+                String sql = "INSERT INTO times (cnome, cbandeira, cidgrupo, ccontinente) VALUES (?,?,?,?)";
+                Connection c = ConexaoBD.obtemConexao();
+                PreparedStatement ps = c.prepareStatement(sql);
+                ps.setString(1, this.Nome);
+                ps.setString(2, this.Bandeira);
+                ps.setString(3, this.IdGrupo);
+                ps.setString(4, this.Continente);
+                ps.execute();
 
-            var oGrupo = new Grupo();
-            oGrupo.IdGrupo = this.Grupo;
-            oGrupo.IdTime = this.Id;
-            oGrupo.Incluir();
+                var oGrupo = new Grupo();
+                oGrupo.IdGrupo = this.IdGrupo;
+                oGrupo.IdTime = this.Id;
+                oGrupo.Incluir();
+            } else {
+                String msg = "";
+                if (qtdTimesCadastrados >= 32) {
+                    msg = "Não é possível incluir o time " + this.Nome + " pois já existem 32 times cadastrados.\n";
+                }
+                if (qtdTimesNoGrupo >= 4) {
+                    msg += "O Grupo " + this.IdGrupo + " já está cheio.";
+                }
+                throw new SQLException(msg);
+            }
         } catch (Exception ex) {
             throw ex;
         }
@@ -111,14 +126,14 @@ public class Time {
         try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
             ps.setString(1, this.Nome);
             ps.setString(2, this.Bandeira);
-            ps.setString(3, this.Grupo);
+            ps.setString(3, this.IdGrupo);
             ps.setString(4, this.Continente);
             ps.setInt(5, pId);
             ps.execute();
 
-            if (oGrupoAntigo.Grupo != this.Grupo) {
+            if (oGrupoAntigo.IdGrupo != this.IdGrupo) {
                 var oGrupo = new Grupo();
-                oGrupo.IdGrupo = this.Grupo;
+                oGrupo.IdGrupo = this.IdGrupo;
                 oGrupo.IdTime = pId;
                 oGrupo.Atualizar();
             }
