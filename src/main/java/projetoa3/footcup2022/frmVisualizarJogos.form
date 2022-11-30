@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="resizable" type="boolean" value="false"/>
@@ -35,8 +35,8 @@
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="jPanel8" alignment="0" max="32767" attributes="0"/>
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Component id="jpnlContainer" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -70,13 +70,13 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="jbtnVoltar1">
+        <Component class="javax.swing.JButton" name="jbtnSimular">
           <Properties>
             <Property name="text" type="java.lang.String" value="Simular"/>
             <Property name="toolTipText" type="java.lang.String" value="Simular Resultados"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnVoltar1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jbtnSimularActionPerformed"/>
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -93,6 +93,7 @@
             <TitledBorder/>
           </Border>
         </Property>
+        <Property name="name" type="java.lang.String" value="jpnlContainer" noResource="true"/>
       </Properties>
 
       <Layout>
@@ -100,120 +101,116 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jpnlGrpB" min="-2" max="-2" attributes="0"/>
-                      <Component id="jpnlGrpC" min="-2" max="-2" attributes="0"/>
-                      <Component id="jpnlGrpA" min="-2" max="-2" attributes="0"/>
-                      <Component id="jpnlGrpD" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jpnlGrpD" max="32767" attributes="0"/>
+                      <Component id="jpnlGrpC" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jpnlGrpB" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jpnlGrpA" alignment="0" max="32767" attributes="0"/>
                   </Group>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                          <Component id="lblOitavas1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jpnlOitavas1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jpnlOitavas3" alignment="0" pref="144" max="32767" attributes="0"/>
+                              <Component id="jpnlOitavas4" max="32767" attributes="0"/>
+                              <Component id="jpnlOitavas2" max="32767" attributes="0"/>
+                          </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jpnlOitavas3" pref="152" max="32767" attributes="0"/>
-                                      <Component id="jpnlOitavas2" alignment="0" pref="152" max="32767" attributes="0"/>
-                                      <Component id="jpnlOitavas1" alignment="0" pref="152" max="32767" attributes="0"/>
-                                  </Group>
+                                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                                  <Component id="lblQuartas1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                                  <Component id="jpnlOitavas4" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jpnlQuartas2" min="-2" pref="148" max="-2" attributes="0"/>
+                                      <Component id="jpnlQuartas1" min="-2" pref="148" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
-                          <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  <Component id="lblOitavas2" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
-                                  <Component id="jpnlGrpE" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace pref="7" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jpnlQuartas2" pref="140" max="32767" attributes="0"/>
-                                          <Component id="jpnlQuartas1" min="-2" pref="140" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                                          <Component id="lblQuartas1" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <Component id="lblFootCupIcon" min="-2" max="-2" attributes="0"/>
-                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="1" attributes="0">
+                                              <Group type="102" attributes="0">
+                                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Group type="102" alignment="0" attributes="0">
+                                                      <Group type="102" alignment="1" attributes="0">
                                                           <Component id="jpnlSemi1" min="-2" pref="136" max="-2" attributes="0"/>
-                                                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
                                                           <Component id="jpnlSemi2" min="-2" pref="142" max="-2" attributes="0"/>
                                                       </Group>
                                                       <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="-2" pref="129" max="-2" attributes="0"/>
-                                                          <Component id="lblFinal" min="-2" max="-2" attributes="0"/>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="72" pref="72" max="-2" attributes="0"/>
-                                                          <Group type="103" groupAlignment="0" attributes="0">
-                                                              <Group type="102" alignment="0" attributes="0">
-                                                                  <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                                                                  <Component id="lblTaca" min="-2" pref="86" max="-2" attributes="0"/>
-                                                              </Group>
-                                                              <Component id="jpnlFinal" min="-2" pref="151" max="-2" attributes="0"/>
-                                                          </Group>
-                                                      </Group>
-                                                      <Group type="102" alignment="0" attributes="0">
-                                                          <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                                                          <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
                                                           <Component id="lblSemis1" min="-2" max="-2" attributes="0"/>
                                                       </Group>
                                                   </Group>
-                                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="jpnlFinal" min="-2" pref="172" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="jpnlQuartas3" pref="150" max="32767" attributes="0"/>
+                                              <Component id="jpnlQuartas4" pref="150" max="32767" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblTaca" min="-2" pref="86" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="332" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jpnlOitavas8" min="-2" pref="140" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace pref="15" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="lblFootCupIcon" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jpnlQuartas4" min="-2" pref="150" max="-2" attributes="0"/>
-                                                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                                                  <Component id="jpnlOitavas6" min="-2" pref="147" max="-2" attributes="0"/>
+                                                  <Component id="lblOitavas2" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                                               </Group>
-                                              <Group type="102" alignment="1" attributes="0">
-                                                  <Component id="jpnlQuartas3" min="-2" pref="152" max="-2" attributes="0"/>
-                                                  <EmptySpace max="32767" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
                                                   <Group type="103" groupAlignment="0" attributes="0">
-                                                      <Component id="jpnlOitavas7" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
-                                                      <Component id="jpnlOitavas8" min="-2" pref="145" max="-2" attributes="0"/>
+                                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                          <Component id="jpnlOitavas6" alignment="0" pref="140" max="32767" attributes="0"/>
+                                                          <Component id="jpnlOitavas5" alignment="0" pref="140" max="32767" attributes="0"/>
+                                                      </Group>
+                                                      <Component id="jpnlOitavas7" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
                                                   </Group>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                               </Group>
                                           </Group>
                                       </Group>
-                                      <Group type="102" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
                                           <Component id="lblQuartas2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
-                                          <Component id="jpnlOitavas5" min="-2" pref="147" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="233" max="-2" attributes="0"/>
                                       </Group>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jpnlGrpF" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jpnlGrpG" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jpnlGrpH" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="lblOitavas1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="1031" max="-2" attributes="0"/>
-                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jpnlGrpE" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jpnlGrpF" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jpnlGrpG" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jpnlGrpH" alignment="1" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -224,126 +221,100 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="1" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace pref="4" max="-2" attributes="0"/>
-                                  <Component id="jpnlGrpA" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
+                          <Component id="lblFootCupIcon" min="-2" pref="113" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                                  <Component id="lblQuartas2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jpnlQuartas3" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="165" max="-2" attributes="0"/>
+                                  <Component id="jpnlQuartas4" min="-2" pref="81" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="lblOitavas1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jpnlOitavas1" min="-2" pref="80" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="lblOitavas2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jpnlOitavas5" min="-2" pref="80" max="-2" attributes="0"/>
-                                      </Group>
+                                  <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
+                                  <Component id="lblSemis1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jpnlSemi1" min="-2" pref="91" max="-2" attributes="0"/>
+                                      <Component id="jpnlSemi2" min="-2" pref="91" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jpnlFinal" min="-2" pref="109" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="lblTaca" min="-2" pref="107" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                          <Component id="jpnlGrpE" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jpnlGrpF" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jpnlGrpG" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jpnlGrpH" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="lblOitavas1" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                                  <Component id="jpnlOitavas1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="jpnlGrpA" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jpnlGrpB" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                  <Component id="jpnlOitavas2" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jpnlGrpB" min="-2" max="-2" attributes="0"/>
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                  <Component id="jpnlOitavas2" min="-2" pref="85" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="jpnlOitavas3" min="-2" pref="74" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="jpnlOitavas4" min="-2" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="jpnlGrpC" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jpnlGrpD" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                                  <Component id="jpnlOitavas3" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jpnlOitavas4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jpnlGrpE" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                          <Component id="lblOitavas2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jpnlGrpF" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jpnlGrpG" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jpnlOitavas6" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                                  <Component id="jpnlOitavas8" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jpnlGrpH" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                                  <Component id="jpnlOitavas7" min="-2" pref="80" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Component id="jpnlOitavas5" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
+                          <Component id="jpnlOitavas6" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                          <Component id="jpnlOitavas7" min="-2" pref="80" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                          <Component id="jpnlOitavas8" min="-2" pref="80" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="lblFootCupIcon" max="32767" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="lblSemis1" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jpnlSemi2" pref="91" max="32767" attributes="0"/>
-                                      <Component id="jpnlSemi1" min="-2" pref="91" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="lblFinal" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jpnlFinal" min="-2" pref="75" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="lblTaca" min="-2" pref="107" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="lblQuartas1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jpnlQuartas1" min="-2" pref="73" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="lblQuartas2" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jpnlQuartas4" min="-2" pref="73" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jpnlQuartas2" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                          <Component id="jpnlQuartas3" min="-2" pref="73" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <EmptySpace min="-2" pref="183" max="-2" attributes="0"/>
+                          <Component id="lblQuartas1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jpnlQuartas1" min="-2" pref="73" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="169" max="-2" attributes="0"/>
+                          <Component id="jpnlQuartas2" min="-2" pref="78" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace min="253" pref="19" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -351,32 +322,42 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="lblOitavas1">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Oitavas"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblOitavas2">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Oitavas"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblQuartas1">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Quartas"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblQuartas2">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Quartas"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblSemis1">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="12" style="1"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Semi Final"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lblFinal">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Final"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblTaca">
@@ -402,6 +383,8 @@
                 <TitledBorder title="Grupo A"/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlGrpA" noResource="true"/>
+            <Property name="opaque" type="boolean" value="false"/>
           </Properties>
 
           <Layout>
@@ -410,12 +393,6 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                              <Component id="lblGAT1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconGAT1" min="-2" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblGAT4" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
@@ -431,6 +408,11 @@
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="iconGAT73" min="-2" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblGAT1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" pref="44" max="32767" attributes="0"/>
+                              <Component id="iconGAT1" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -444,22 +426,22 @@
                           <Component id="iconGAT1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblGAT1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGAT2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGAT2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGAT3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGAT73" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGAT4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGAT4" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="9" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="9" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -522,6 +504,7 @@
                 <TitledBorder title="Grupo B"/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jnplGrpB" noResource="true"/>
           </Properties>
 
           <Layout>
@@ -531,9 +514,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="lblGBT1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="iconGBT1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -564,17 +546,17 @@
                           <Component id="iconGBT1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblGBT1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGBT2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGBT2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGBT3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGBT3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGBT4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGBT4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -642,6 +624,7 @@
                 <TitledBorder title="Grupo C"/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlGrpC" noResource="true"/>
           </Properties>
 
           <Layout>
@@ -651,9 +634,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="lblGCT1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="iconGCT1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -684,17 +666,17 @@
                           <Component id="iconGCT1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblGCT1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGCT2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGCT2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGCT3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGCT3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGCT4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGCT4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -762,6 +744,7 @@
                 <TitledBorder title="Grupo D"/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlGrpD" noResource="true"/>
           </Properties>
 
           <Layout>
@@ -771,9 +754,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="lblGDT1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="iconGDT1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -804,17 +786,17 @@
                           <Component id="iconGDT1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblGDT1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGDT2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGDT2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGDT3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGDT3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGDT4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGDT4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -882,6 +864,7 @@
                 <TitledBorder title="Grupo E"/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlGrpE" noResource="true"/>
           </Properties>
 
           <Layout>
@@ -891,9 +874,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="lblGET1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace pref="32" max="32767" attributes="0"/>
                               <Component id="iconGET1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -924,17 +906,17 @@
                           <Component id="iconGET1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblGET1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGET2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGET2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGET3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGET3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGET4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGET4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1002,6 +984,7 @@
                 <TitledBorder title="Grupo F"/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlGrpF" noResource="true"/>
           </Properties>
 
           <Layout>
@@ -1011,9 +994,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="lblGFT1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="iconGFT1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
@@ -1044,17 +1026,17 @@
                           <Component id="iconGFT1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblGFT1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGFT2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGFT2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGFT3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGFT3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGFT4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGFT4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1122,6 +1104,7 @@
                 <TitledBorder title="Grupo G"/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlGrpG" noResource="true"/>
           </Properties>
 
           <Layout>
@@ -1131,9 +1114,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="lblGGT1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="iconGGT1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -1164,17 +1146,17 @@
                           <Component id="iconGGT1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblGGT1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGGT2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGGT2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGGT3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGGT3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGGT4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGGT4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1242,6 +1224,7 @@
                 <TitledBorder title="Grupo H"/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlGrpH" noResource="true"/>
           </Properties>
 
           <Layout>
@@ -1251,9 +1234,8 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="lblGHT1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="iconGHT1" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -1284,17 +1266,17 @@
                           <Component id="iconGHT1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblGHT1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGHT2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGHT2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGHT3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGHT3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblGHT4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconGHT4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1362,63 +1344,50 @@
                 <TitledBorder/>
               </Border>
             </Property>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[104, 76]"/>
-            </Property>
           </Properties>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="lblO1T2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="lblO1T1" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblO1T2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="iconO1T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarO1T1" min="-2" pref="14" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="lblO1T1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="iconO1T1" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" attributes="0">
                               <Component id="iconO1T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="lblPlacarO1" min="-2" max="-2" attributes="0"/>
+                              <Component id="placarO1T2" min="-2" pref="14" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="lblO1T1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="iconO1T1" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblO1T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconO1T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                              <Component id="lblPlacarO1" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblO1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblO1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1434,19 +1403,24 @@
                 <Property name="text" type="java.lang.String" value="Time 2"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JLabel" name="iconO1T1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Logo 1"/>
+              </Properties>
+            </Component>
             <Component class="javax.swing.JLabel" name="iconO1T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarO1">
+            <Component class="javax.swing.JLabel" name="placarO1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconO1T1">
+            <Component class="javax.swing.JLabel" name="placarO1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1458,9 +1432,6 @@
                 <TitledBorder/>
               </Border>
             </Property>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[114, 76]"/>
-            </Property>
           </Properties>
 
           <Layout>
@@ -1468,43 +1439,44 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblO2T2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="icon02T2" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" alignment="0" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblO2T1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="32767" attributes="0"/>
                               <Component id="iconO2T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="32767" attributes="0"/>
+                              <Component id="placarO2T1" min="-2" pref="12" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblO2T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="32767" attributes="0"/>
+                              <Component id="iconO2T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="32767" attributes="0"/>
+                              <Component id="placarO2T2" min="-2" pref="12" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="lblPlacarO2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblO2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO2T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Component id="lblPlacarO2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="icon02T2" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="iconO2T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="placarO2T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
                           <Component id="lblO2T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1525,14 +1497,19 @@
                 <Property name="text" type="java.lang.String" value="Time 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="icon02T2">
+            <Component class="javax.swing.JLabel" name="iconO2T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarO2">
+            <Component class="javax.swing.JLabel" name="placarO2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarO2T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1544,6 +1521,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlOitavas3" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[114, 76]"/>
             </Property>
@@ -1558,21 +1536,19 @@
                           <Group type="102" attributes="0">
                               <Component id="lblO3T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                                      <Component id="lblPlacarO3" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="iconO3T1" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <Component id="iconO3T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarO3T1" max="32767" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
+                          <Group type="102" attributes="0">
                               <Component id="lblO3T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               <Component id="iconO3T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="placarO3T2" pref="13" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1583,15 +1559,15 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblO3T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO3T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO3T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                      <Component id="lblPlacarO3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblO3T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO3T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO3T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1617,9 +1593,14 @@
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarO3">
+            <Component class="javax.swing.JLabel" name="placarO3T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarO3T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1631,6 +1612,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlOitavas4" noResource="true"/>
             <Property name="requestFocusEnabled" type="boolean" value="false"/>
           </Properties>
 
@@ -1644,41 +1626,41 @@
                               <Component id="lblO4T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconO4T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarO4T1" min="-2" pref="18" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblO4T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconO4T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarO4T2" min="-2" pref="17" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
-                      <Component id="lblPlacarO4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblO4T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconO4T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblO4T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconO4T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblO4T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconO4T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                              <Component id="lblPlacarO4" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="placarO4T1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="iconO4T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="placarO4T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="lblO4T2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="21" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1704,9 +1686,14 @@
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarO4">
+            <Component class="javax.swing.JLabel" name="placarO4T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarO4T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1718,6 +1705,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlOitavas5" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -1733,16 +1721,18 @@
                               <Component id="lblO5T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconO5T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="placarO5T1" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblO5T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconO5T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="placarO5T2" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
-                      <Component id="lblPlacarO5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1750,21 +1740,19 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="103" alignment="1" groupAlignment="3" attributes="0">
                               <Component id="lblO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="iconO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="placarO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="3" attributes="0">
                                   <Component id="lblO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="iconO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="placarO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                              <Component id="lblPlacarO5" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
@@ -1793,9 +1781,14 @@
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarO5">
+            <Component class="javax.swing.JLabel" name="placarO5T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarO5T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1807,6 +1800,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlOitavas6" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -1819,69 +1813,73 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblO5T3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblO6T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconO5T3" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconO6T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarO6T1" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblO5T4" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblO6T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconO5T4" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconO6T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarO6T2" min="-2" pref="16" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="21" max="32767" attributes="0"/>
-                      <Component id="lblPlacarO6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace pref="8" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblO5T3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="iconO5T3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblO6T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO6T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO6T1" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblO5T4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="iconO5T4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblO6T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO6T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO6T2" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="lblPlacarO6" min="-2" pref="30" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lblO5T3">
+            <Component class="javax.swing.JLabel" name="lblO6T1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconO5T3">
+            <Component class="javax.swing.JLabel" name="iconO6T1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblO5T4">
+            <Component class="javax.swing.JLabel" name="lblO6T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconO5T4">
+            <Component class="javax.swing.JLabel" name="iconO6T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarO6">
+            <Component class="javax.swing.JLabel" name="placarO6T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarO6T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1893,6 +1891,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlOitavas7" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -1905,72 +1904,73 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblO5T5" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblO7T7" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconO5T5" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconO7T7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarO7T1" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblO5T6" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblO7T8" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconO5T6" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconO7T8" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="placarO7T2" pref="18" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="19" max="32767" attributes="0"/>
-                      <Component id="lblPlacarO7" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="lblO5T6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="iconO5T6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblO5T5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconO5T5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                              <Component id="lblPlacarO7" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblO7T7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO7T7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO7T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblO7T8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO7T8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO7T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lblO5T5">
+            <Component class="javax.swing.JLabel" name="lblO7T7">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconO5T5">
+            <Component class="javax.swing.JLabel" name="iconO7T7">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblO5T6">
+            <Component class="javax.swing.JLabel" name="lblO7T8">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconO5T6">
+            <Component class="javax.swing.JLabel" name="iconO7T8">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarO7">
+            <Component class="javax.swing.JLabel" name="placarO7T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarO7T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1982,6 +1982,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlOitavas8" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -1994,68 +1995,73 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblO5T7" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblO8T5" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconO5T7" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconO8T5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarO8T1" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblO5T8" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblO8T6" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconO5T8" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconO8T6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="placarO8T2" pref="18" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="19" max="32767" attributes="0"/>
-                      <Component id="lblPlacarO8" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblO5T7" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="iconO5T7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblO8T5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO8T5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO8T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblO5T8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="iconO5T8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblO8T6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO8T6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO8T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                      <Component id="lblPlacarO8" min="-2" pref="30" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="22" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lblO5T7">
+            <Component class="javax.swing.JLabel" name="lblO8T5">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconO5T7">
+            <Component class="javax.swing.JLabel" name="iconO8T5">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblO5T8">
+            <Component class="javax.swing.JLabel" name="lblO8T6">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconO5T8">
+            <Component class="javax.swing.JLabel" name="iconO8T6">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarO8">
+            <Component class="javax.swing.JLabel" name="placarO8T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarO8T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -2067,6 +2073,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlQuartas1" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -2077,25 +2084,21 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblQ1T1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="iconQ1T1" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblQ1T2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="iconQ1T2" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblQ1T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="iconQ1T1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="114" max="32767" attributes="0"/>
-                              <Component id="lblPlacarQ1" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblQ1T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="iconQ1T2" min="-2" max="-2" attributes="0"/>
                           </Group>
+                      </Group>
+                      <EmptySpace pref="35" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="placarQ1T1" pref="15" max="32767" attributes="0"/>
+                          <Component id="placarQ1T2" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -2104,18 +2107,30 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="iconQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="placarQ1T1" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                      <Component id="lblPlacarQ1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblQ1T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="iconQ1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblQ1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="iconQ1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarQ1T2" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2141,9 +2156,14 @@
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarQ1">
+            <Component class="javax.swing.JLabel" name="placarQ1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarQ1T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -2155,6 +2175,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlQuartas2" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -2170,39 +2191,35 @@
                               <Component id="lblQ2T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconQ2T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarQ2T1" pref="26" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblQ2T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconQ2T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarQ2T2" pref="26" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblPlacarQ2" max="32767" attributes="0"/>
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblQ2T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconQ2T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblQ2T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconQ2T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                              <Component id="lblPlacarQ2" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblQ2T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconQ2T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarQ2T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblQ2T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconQ2T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarQ2T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -2230,9 +2247,14 @@
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarQ2">
+            <Component class="javax.swing.JLabel" name="placarQ2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarQ2T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -2244,6 +2266,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlQuartas3" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -2256,72 +2279,73 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblQ1T3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblQ3T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconQ1T3" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconQ3T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="placarQ3T1" pref="24" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblQ1T4" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblQ3T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconQ1T4" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconQ3T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarQ3T2" pref="24" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblPlacarQ7" pref="26" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblQ1T3" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconQ1T3" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblQ1T4" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconQ1T4" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                              <Component id="lblPlacarQ7" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblQ3T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconQ3T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarQ3T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblQ3T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconQ3T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarQ3T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lblQ1T3">
+            <Component class="javax.swing.JLabel" name="lblQ3T1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconQ1T3">
+            <Component class="javax.swing.JLabel" name="iconQ3T1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblQ1T4">
+            <Component class="javax.swing.JLabel" name="lblQ3T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconQ1T4">
+            <Component class="javax.swing.JLabel" name="iconQ3T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarQ7">
+            <Component class="javax.swing.JLabel" name="placarQ3T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarQ3T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -2333,6 +2357,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlQuartas4" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -2345,70 +2370,71 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblQ1T5" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblQ4T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconQ1T5" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconQ4T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="placarQ4T1" pref="24" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblQ1T6" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblQ4T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconQ1T6" min="-2" max="-2" attributes="0"/>
+                              <Component id="iconQ4T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarQ4T2" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="lblPlacarQ8" pref="24" max="32767" attributes="0"/>
                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblQ1T5" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconQ1T5" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblQ1T6" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconQ1T6" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                              <Component id="lblPlacarQ8" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblQ4T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconQ4T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarQ4T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblQ4T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconQ4T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarQ4T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lblQ1T5">
+            <Component class="javax.swing.JLabel" name="lblQ4T1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconQ1T5">
+            <Component class="javax.swing.JLabel" name="iconQ4T1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 1"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblQ1T6">
+            <Component class="javax.swing.JLabel" name="lblQ4T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Time 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="iconQ1T6">
+            <Component class="javax.swing.JLabel" name="iconQ4T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarQ8">
+            <Component class="javax.swing.JLabel" name="placarQ4T1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0x0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarQ4T2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="0x0"/>
               </Properties>
@@ -2422,6 +2448,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlSemi1" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -2437,17 +2464,17 @@
                               <Component id="lblS1T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconS1T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarS1T1" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblS1T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconS1T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="placarS1T2" pref="14" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="110" max="32767" attributes="0"/>
-                      <Component id="lblPlacarS1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -2459,13 +2486,13 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblS1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarS1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="13" max="32767" attributes="0"/>
-                      <Component id="lblPlacarS1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
+                      <EmptySpace pref="32" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblS1T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarS1T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -2493,9 +2520,14 @@
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarS1">
+            <Component class="javax.swing.JLabel" name="placarS1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarS1T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -2507,6 +2539,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlSemi2" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -2522,17 +2555,17 @@
                               <Component id="lblS2T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconS2T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="placarS2T1" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblS2T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconS2T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="placarS2T2" pref="20" max="32767" attributes="0"/>
                           </Group>
                       </Group>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="116" max="32767" attributes="0"/>
-                      <Component id="lblPlacarS2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -2544,13 +2577,13 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblS2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS2T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarS2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="lblPlacarS2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace pref="32" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblS2T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS2T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarS2T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -2578,9 +2611,14 @@
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarS2">
+            <Component class="javax.swing.JLabel" name="placarS2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarS2T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -2592,6 +2630,7 @@
                 <TitledBorder/>
               </Border>
             </Property>
+            <Property name="name" type="java.lang.String" value="jpnlFinal" noResource="true"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[104, 76]"/>
             </Property>
@@ -2606,41 +2645,41 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblF1T1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconF1T1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="iconF1T1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFinal" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblF1T2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="iconF1T2" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace pref="25" max="32767" attributes="0"/>
-                              <Component id="lblPlacarF1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace pref="47" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="placarF1T1" min="-2" pref="17" max="-2" attributes="0"/>
+                          <Component id="placarF1T2" min="-2" pref="17" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lblFinal" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblF1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconF1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarF1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblF1T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconF1T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
-                              <Component id="lblPlacarF1" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblF1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconF1T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarF1T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -2668,9 +2707,22 @@
                 <Property name="text" type="java.lang.String" value="Logo 2"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="lblPlacarF1">
+            <Component class="javax.swing.JLabel" name="placarF1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="0x0"/>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="placarF1T2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFinal">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="18" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Final"/>
               </Properties>
             </Component>
           </SubComponents>

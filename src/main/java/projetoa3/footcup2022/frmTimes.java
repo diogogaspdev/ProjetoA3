@@ -23,15 +23,10 @@ import projetoa3.footcup2022.Lib.Comum;
  */
 public class frmTimes extends javax.swing.JFrame {
 
-    /**
-     * Creates new form frmTimes
-     */
-    private String imgPath = System.getProperty("user.dir") + "/src/main/java/projetoa3/footcup2022/Imagens/Times/";
-
     public frmTimes() {
         initComponents();
         preparaAcessoMenu();
-
+        Comum.setBandeiraTime(jlblBandeira, "default");
         for (Enumeration<AbstractButton> buttons = rbtnGrpContinente.getElements(); buttons.hasMoreElements();) {
             AbstractButton btn = buttons.nextElement();
             btn.setActionCommand(btn.getText());
@@ -161,7 +156,7 @@ public class frmTimes extends javax.swing.JFrame {
 
         jLabel2.setText("Grupo do time");
 
-        jcboGrupo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D", "E" }));
+        jcboGrupo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "B", "C", "D", "E", "F", "G", "H" }));
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Continente"));
 
@@ -445,9 +440,8 @@ public class frmTimes extends javax.swing.JFrame {
         rbtnGrpContinente.clearSelection();
         jtxtIdTime.setText("");
 
-        String usrIcon = "time_default.png";
+        Comum.setBandeiraTime(jlblBandeira, "default");
         String credito = "<a href=\"https://www.flaticon.com/free-icons/pennant\" Created by itim2101 - Flaticon</a>";
-        jlblBandeira.setIcon(new ImageIcon(imgPath + usrIcon));
         jlblBandeira.setToolTipText(credito);
     }//GEN-LAST:event_jbtnLimparActionPerformed
 

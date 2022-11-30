@@ -533,7 +533,8 @@ public class frmGrupos extends javax.swing.JFrame {
             this.carregaGrupo(jtableGrpD, new Grupo().Listar("D"));
             this.carregaGrupo(jtableGrpE, new Grupo().Listar("E"));
             this.carregaGrupo(jtableGrpF, new Grupo().Listar("F"));
-            this.carregaGrupo(jtableGrpH, new Grupo().Listar("G"));
+            this.carregaGrupo(jtableGrpG, new Grupo().Listar("G"));
+            this.carregaGrupo(jtableGrpH, new Grupo().Listar("H"));
             
         } catch (Exception ex) {
             ex.printStackTrace();

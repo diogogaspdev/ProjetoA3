@@ -133,9 +133,7 @@ public class Time {
 
             if (oGrupoAntigo.IdGrupo != this.IdGrupo) {
                 var oGrupo = new Grupo();
-                oGrupo.IdGrupo = this.IdGrupo;
-                oGrupo.IdTime = pId;
-                oGrupo.Atualizar();
+                oGrupo.AtualizarGrupo(pId, this.IdGrupo);// Atualiza o novo grupo do time
             }
 
         } catch (Exception ex) {

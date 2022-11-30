@@ -71,6 +71,7 @@ public class frmHome extends javax.swing.JFrame {
         jbtnSair = new javax.swing.JButton();
         jlblUserIcon = new javax.swing.JLabel();
         jbtnCadUsuario = new javax.swing.JButton();
+        lblLogo = new javax.swing.JLabel();
 
         jMenu1.setText("jMenu1");
         jMenu1.setActionCommand("jbtnSimulacaoJogos");
@@ -174,17 +175,26 @@ public class frmHome extends javax.swing.JFrame {
                 .addGap(9, 9, 9))
         );
 
+        lblLogo.setIcon(new javax.swing.ImageIcon("D:\\lp_dir\\USJT\\2022_2\\ProjetoA3\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\logo.png")); // NOI18N
+        lblLogo.setText(" ");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 377, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(lblLogo)
+                .addGap(0, 14, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(187, 187, 187)
+                .addComponent(lblLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -270,5 +280,6 @@ public class frmHome extends javax.swing.JFrame {
     private javax.swing.JLabel jlblUser;
     private javax.swing.JLabel jlblUserIcon;
     private javax.swing.JMenuItem jmitSimularFaseG;
+    private javax.swing.JLabel lblLogo;
     // End of variables declaration//GEN-END:variables
 }

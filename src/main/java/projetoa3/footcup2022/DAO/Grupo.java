@@ -39,12 +39,13 @@ public class Grupo {
                      SELECT t.cnome, t.iidtime, grp.iqtdpts, grp.iqtdjogos, grp.iqtdvitorias, grp.iqtdempates, 
                      grp.iqtdderrotas, grp.iqtdgolspro, grp.iqtdgolscontra, grp.isaldo FROM grupos grp
                      INNER JOIN times t ON grp.iidtime = t.iidtime
-                     $pCrit$""";
+                     $pCrit$
+                     ORDER BY grp.iqtdpts DESC, grp.isaldo ASC;""";
 
         if (!IdGrupo.isBlank() || IdGrupo != null) {
             sql = sql.replace("$pCrit$", "WHERE grp.cidgrupo = \"" + IdGrupo + "\"");
         }
-        sql += ";";
+        sql += "";
 
         var lGrupos = new ArrayList<Grupo>();
         try ( Connection conexao = ConexaoBD.obtemConexao();  PreparedStatement ps = conexao.prepareStatement(sql)) {
@@ -56,7 +57,8 @@ public class Grupo {
                     oTime.IdTime = rs.getInt("iidtime");
                     oTime.qtdPontos = rs.getInt("iqtdpts");
                     oTime.qtdVitorias = rs.getInt("iqtdvitorias");
-                    oTime.qtdEmpates = rs.getInt("iqtdderrotas");
+                    oTime.qtdEmpates = rs.getInt("iqtdempates");
+                    oTime.qtdDerrotas = rs.getInt("iqtdderrotas");
                     oTime.qtdGolsMarcados = rs.getInt("iqtdgolspro");
                     oTime.qtdGolsSofridos = rs.getInt("iqtdgolscontra");
                     oTime.saldoGols = rs.getInt("isaldo");
@@ -78,11 +80,32 @@ public class Grupo {
         }
     }
 
-    public void Atualizar() throws SQLException {
+    public void AtualizarPontos() throws SQLException {
+        String sql = "UPDATE footcup.grupos\n"
+                + "SET iqtdpts = ?, iqtdvitorias = ?, iqtdempates = ?, iqtdderrotas = ?, \n"
+                + "iqtdgolspro = ?, iqtdgolscontra = ?, isaldo = ?, iqtdjogos = ?\n"
+                + "WHERE iidtime = ?;";
+        try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
+            ps.setInt(1, this.qtdPontos);
+            ps.setInt(2, this.qtdVitorias);
+            ps.setInt(3, this.qtdEmpates);
+            ps.setInt(4, this.qtdDerrotas);
+            ps.setInt(5, this.qtdGolsMarcados);
+            ps.setInt(6, this.qtdGolsSofridos);
+            ps.setInt(7, this.saldoGols);
+            ps.setInt(8, this.qtdJogos);
+            ps.setInt(9, this.IdTime);
+            ps.execute();
+        } catch (Exception ex) {
+            throw ex;
+        }
+    }
+
+    public void AtualizarGrupo(int pIdTime, String pIdNovoGrupo) throws SQLException {
         String sql = "UPDATE footcup.grupos SET cidgrupo = ? WHERE iidtime = ?;";
         try ( Connection c = ConexaoBD.obtemConexao();  PreparedStatement ps = c.prepareStatement(sql)) {
-            ps.setString(1, this.IdGrupo);
-            ps.setInt(2, this.IdTime);
+            ps.setString(1, pIdNovoGrupo);
+            ps.setInt(2, pIdTime);
             ps.execute();
         } catch (Exception ex) {
             throw ex;

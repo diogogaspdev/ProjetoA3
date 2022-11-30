@@ -69,6 +69,7 @@ public final class Comum {
         String imgPath = System.getProperty("user.dir") + "/src/main/java/projetoa3/footcup2022/Imagens/Times/";
         // Instanciamos um objeto do tipo File com o nome 'f'.
         pBandeira = pBandeira.replace(" ", "-");
+        pLabel.setText("");
         if (pBandeira.endsWith("-")) {
             pBandeira = pBandeira.substring(0, pBandeira.length() - 1);
         }
@@ -77,9 +78,12 @@ public final class Comum {
         if (f.exists()) {
             pLabel.setIcon(new ImageIcon(f.getPath()));
         } else {
-            pLabel.setIcon(new ImageIcon(imgPath + "time_default.png"));
+            String img = "default";
+            if (pBandeira.contains("_24")) {
+                img += "_24";
+            }
+            pLabel.setIcon(new ImageIcon(imgPath + img + ".png"));
         }
     }
 
-    
 }
