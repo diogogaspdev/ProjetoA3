@@ -77,7 +77,7 @@ public class Jogos {
         }
     }
 
-    private int getSimulacaoGols() {
+    public int getSimulacaoGols() {
         return (int) Math.round((Math.random() * (3 - 0)) + 0);
     }
 
