@@ -70,81 +70,129 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         //Oitavas 1
         lblO1T1.setText(lblGAT1.getText());
         resultadoT1 = jogo.getSimulacaoGols();
-        placarO1T1.setText(resultadoT1 + "");
         Comum.setBandeiraTime(iconO1T1, lblGAT1.getText() + "_24");
         lblO1T2.setText(lblGBT2.getText());
         Comum.setBandeiraTime(iconO1T2, lblGBT2.getText() + "_24");
         resultadoT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoT1 == resultadoT2) {
+            resultadoT1 = jogo.getSimulacaoGols();
+            resultadoT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarO1T1.setText(resultadoT1 + "");
         placarO1T2.setText(resultadoT2 + "");
 
         //Oitavas 2
         lblO2T1.setText(lblGCT1.getText());
         resultadoT1 = jogo.getSimulacaoGols();
-        placarO2T1.setText(resultadoT1 + "");
         Comum.setBandeiraTime(iconO2T1, lblGCT1.getText() + "_24");
         lblO2T2.setText(lblGDT2.getText());
         Comum.setBandeiraTime(iconO2T2, lblGDT2.getText() + "_24");
         resultadoT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoT1 == resultadoT2) {
+            resultadoT1 = jogo.getSimulacaoGols();
+            resultadoT2 = jogo.getSimulacaoGols();
+        }        
+        
+        placarO2T1.setText(resultadoT1 + "");
         placarO2T2.setText(resultadoT2 + "");
 
         //Oitavas 3
         lblO3T1.setText(lblGET1.getText());
         resultadoT1 = jogo.getSimulacaoGols();
-        placarO3T1.setText(resultadoT1 + "");
         Comum.setBandeiraTime(iconO3T1, lblGET1.getText() + "_24");
         lblO3T2.setText(lblGFT2.getText());
         Comum.setBandeiraTime(iconO3T2, lblGFT2.getText() + "_24");
         resultadoT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoT1 == resultadoT2) {
+            resultadoT1 = jogo.getSimulacaoGols();
+            resultadoT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarO3T1.setText(resultadoT1 + "");
         placarO3T2.setText(resultadoT2 + "");
 
         //Oitavas 4
         lblO4T1.setText(lblGGT1.getText());
         resultadoT1 = jogo.getSimulacaoGols();
-        placarO4T1.setText(resultadoT1 + "");
         Comum.setBandeiraTime(iconO4T1, lblGGT1.getText() + "_24");
         lblO4T2.setText(lblGHT2.getText());
         Comum.setBandeiraTime(iconO4T2, lblGHT2.getText() + "_24");
         resultadoT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoT1 == resultadoT2) {
+            resultadoT1 = jogo.getSimulacaoGols();
+            resultadoT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarO4T1.setText(resultadoT1 + "");
         placarO4T2.setText(resultadoT2 + "");
 
         //Oitavas 5
         lblO5T1.setText(lblGBT1.getText());
         resultadoT1 = jogo.getSimulacaoGols();
-        placarO5T1.setText(resultadoT1 + "");
         Comum.setBandeiraTime(iconO5T1, lblGBT1.getText() + "_24");
         lblO5T2.setText(lblGAT2.getText());
         Comum.setBandeiraTime(iconO5T2, lblGAT2.getText() + "_24");
         resultadoT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoT1 == resultadoT2) {
+            resultadoT1 = jogo.getSimulacaoGols();
+            resultadoT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarO5T1.setText(resultadoT1 + "");
         placarO5T2.setText(resultadoT2 + "");
 
         //Oitavas 6
         lblO6T1.setText(lblGDT1.getText());
         resultadoT1 = jogo.getSimulacaoGols();
-        placarO6T1.setText(resultadoT1 + "");
         Comum.setBandeiraTime(iconO6T1, lblGDT1.getText() + "_24");
         lblO6T2.setText(lblGCT2.getText());
         Comum.setBandeiraTime(iconO6T2, lblGCT2.getText() + "_24");
         resultadoT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoT1 == resultadoT2) {
+            resultadoT1 = jogo.getSimulacaoGols();
+            resultadoT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarO6T1.setText(resultadoT1 + "");
         placarO6T2.setText(resultadoT2 + "");
 
         //Oitavas 7
         lblO7T1.setText(lblGFT1.getText());
         resultadoT1 = jogo.getSimulacaoGols();
-        placarO7T1.setText(resultadoT1 + "");
         Comum.setBandeiraTime(iconO7T1, lblGFT1.getText() + "_24");
         lblO7T2.setText(lblGET2.getText());
         Comum.setBandeiraTime(iconO7T2, lblGET2.getText() + "_24");
         resultadoT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoT1 == resultadoT2) {
+            resultadoT1 = jogo.getSimulacaoGols();
+            resultadoT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarO7T1.setText(resultadoT1 + "");
         placarO7T2.setText(resultadoT2 + "");
 
         //Oitavas 8
         lblO8T1.setText(lblGHT1.getText());
         resultadoT1 = jogo.getSimulacaoGols();
-        placarO8T1.setText(resultadoT1 + "");
         Comum.setBandeiraTime(iconO8T1, lblGHT1.getText() + "_24");
         lblO8T2.setText(lblGGT2.getText());
         Comum.setBandeiraTime(iconO8T2, lblGGT2.getText() + "_24");
         resultadoT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoT1 == resultadoT2) {
+            resultadoT1 = jogo.getSimulacaoGols();
+            resultadoT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarO8T1.setText(resultadoT1 + "");
         placarO8T2.setText(resultadoT2 + "");
 
     }
@@ -162,7 +210,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
     }
 
     private void preparaQuartas() {
-        int resultadoT1, resultadoT2 = 0;
+        int resultadoT1, resultadoT2, resultadoxT1, resultadoxT2 = 0;
         Jogos jogo = new Jogos();
         JLabel time = null;
 
@@ -171,65 +219,105 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         resultadoT2 = Integer.parseInt(placarO1T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblO1T1 : lblO1T2;
         lblQ1T1.setText(time.getText());
-        placarQ1T1.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconQ1T1, time.getText() + "_24");
+        
         // ------------- Quartas 1 - Time 2
         resultadoT1 = Integer.parseInt(placarO2T1.getText());
         resultadoT2 = Integer.parseInt(placarO2T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblO2T1 : lblO2T2;
         lblQ1T2.setText(time.getText());
-        placarQ1T2.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconQ1T2, time.getText() + "_24");
 
+        resultadoxT1 = jogo.getSimulacaoGols();
+        resultadoxT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoxT1 == resultadoxT2) {
+            resultadoxT1 = jogo.getSimulacaoGols();
+            resultadoxT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarQ1T1.setText(resultadoxT1 + "");
+        placarQ1T2.setText(resultadoxT2 + "");
+        
         // ------------- Quartas 2 - Time 1
         resultadoT1 = Integer.parseInt(placarO3T1.getText());
         resultadoT2 = Integer.parseInt(placarO3T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblO3T1 : lblO3T2;
         lblQ2T1.setText(time.getText());
-        placarQ2T1.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconQ2T1, time.getText() + "_24");
+        
         // ------------- Quartas 2 - Time 2
         resultadoT1 = Integer.parseInt(placarO4T1.getText());
         resultadoT2 = Integer.parseInt(placarO4T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblO4T1 : lblO4T2;
         lblQ2T2.setText(time.getText());
-        placarQ2T2.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconQ2T2, time.getText() + "_24");
+
+        resultadoxT1 = jogo.getSimulacaoGols();
+        resultadoxT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoxT1 == resultadoxT2) {
+            resultadoxT1 = jogo.getSimulacaoGols();
+            resultadoxT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarQ2T1.setText(resultadoxT1 + "");
+        placarQ2T2.setText(resultadoxT2 + "");
 
         // ------------- Quartas 3 - Time 1
         resultadoT1 = Integer.parseInt(placarO5T1.getText());
         resultadoT2 = Integer.parseInt(placarO5T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblO5T1 : lblO5T2;
         lblQ3T1.setText(time.getText());
-        placarQ3T1.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconQ3T1, time.getText() + "_24");
+        
         // ------------- Quartas 3 - Time 2
         resultadoT1 = Integer.parseInt(placarO6T1.getText());
         resultadoT2 = Integer.parseInt(placarO6T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblO6T1 : lblO6T2;
         lblQ3T2.setText(time.getText());
-        placarQ3T2.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconQ3T2, time.getText() + "_24");
+
+        resultadoxT1 = jogo.getSimulacaoGols();
+        resultadoxT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoxT1 == resultadoxT2) {
+            resultadoxT1 = jogo.getSimulacaoGols();
+            resultadoxT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarQ3T1.setText(resultadoxT1 + "");
+        placarQ3T2.setText(resultadoxT2 + "");
 
         // ------------- Quartas 4 - Time 1
         resultadoT1 = Integer.parseInt(placarO7T1.getText());
         resultadoT2 = Integer.parseInt(placarO7T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblO7T1 : lblO7T2;
         lblQ4T1.setText(time.getText());
-        placarQ4T1.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconQ4T1, time.getText() + "_24");
+        
         // ------------- Quartas 4 - Time 2
         resultadoT1 = Integer.parseInt(placarO8T1.getText());
         resultadoT2 = Integer.parseInt(placarO8T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblO8T1 : lblO8T2;
         lblQ4T2.setText(time.getText());
-        placarQ4T2.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconQ4T2, time.getText() + "_24");
+
+        resultadoxT1 = jogo.getSimulacaoGols();
+        resultadoxT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoxT1 == resultadoxT2) {
+            resultadoxT1 = jogo.getSimulacaoGols();
+            resultadoxT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarQ4T1.setText(resultadoxT1 + "");
+        placarQ4T2.setText(resultadoxT2 + "");
 
     }
 
     private void preparaSemis() {
-        int resultadoT1, resultadoT2 = 0;
+        int resultadoT1, resultadoT2, resultadoxT1, resultadoxT2 = 0;
         Jogos jogo = new Jogos();
         JLabel time = null;
 
@@ -238,34 +326,52 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         resultadoT2 = Integer.parseInt(placarQ1T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblQ1T1 : lblQ1T2;
         lblS1T1.setText(time.getText());
-        placarS1T1.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconS1T1, time.getText() + "_24");
         // ------------- SEMIS 1 - Time 2
         resultadoT1 = Integer.parseInt(placarQ2T1.getText());
         resultadoT2 = Integer.parseInt(placarQ2T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblQ2T1 : lblQ2T2;
         lblS1T2.setText(time.getText());
-        placarS1T2.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconS1T2, time.getText() + "_24");
+
+        resultadoxT1 = jogo.getSimulacaoGols();
+        resultadoxT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoxT1 == resultadoxT2) {
+            resultadoxT1 = jogo.getSimulacaoGols();
+            resultadoxT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarS1T1.setText(resultadoxT1 + "");
+        placarS1T2.setText(resultadoxT2 + "");
 
         // ------------- SEMIS 2 - Time 1
         resultadoT1 = Integer.parseInt(placarQ3T1.getText());
         resultadoT2 = Integer.parseInt(placarQ3T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblQ3T1 : lblQ3T2;
         lblS2T1.setText(time.getText());
-        placarS2T1.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconS2T1, time.getText() + "_24");
         // ------------- SEMIS 2 - Time 2
         resultadoT1 = Integer.parseInt(placarQ4T1.getText());
         resultadoT2 = Integer.parseInt(placarQ4T2.getText());
         time = (resultadoT1 > resultadoT2) ? lblQ4T1 : lblQ4T2;
         lblS2T2.setText(time.getText());
-        placarS2T2.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconS2T2, time.getText() + "_24");
+
+        resultadoxT1 = jogo.getSimulacaoGols();
+        resultadoxT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoxT1 == resultadoxT2) {
+            resultadoxT1 = jogo.getSimulacaoGols();
+            resultadoxT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarS2T1.setText(resultadoxT1 + "");
+        placarS2T2.setText(resultadoxT2 + "");
     }
 
     private void preparaFinal() {
-        int resultadoT1, resultadoT2 = 0;
+        int resultadoT1, resultadoT2, resultadoxT1, resultadoxT2 = 0;
         Jogos jogo = new Jogos();
         JLabel time = null;
 
@@ -283,6 +389,17 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         lblF1T2.setText(time.getText());
         placarF1T2.setText(jogo.getSimulacaoGols() + "");
         Comum.setBandeiraTime(iconF1T2, time.getText() + "_24");
+
+        resultadoxT1 = jogo.getSimulacaoGols();
+        resultadoxT2 = jogo.getSimulacaoGols();
+        
+        while (resultadoxT1 == resultadoxT2) {
+            resultadoxT1 = jogo.getSimulacaoGols();
+            resultadoxT2 = jogo.getSimulacaoGols();
+        }
+        
+        placarF1T1.setText(resultadoxT1 + "");
+        placarF1T2.setText(resultadoxT2 + "");
 
         resultadoT1 = Integer.parseInt(placarF1T1.getText());
         resultadoT2 = Integer.parseInt(placarF1T2.getText());
@@ -530,35 +647,34 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         lblSemis1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lblSemis1.setText("Semi Final");
 
-        lblFootCupIcon.setIcon(new javax.swing.ImageIcon("D:\\lp_dir\\USJT\\2022_2\\ProjetoA3\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\logo.png")); // NOI18N
         lblFootCupIcon.setText(" ");
 
         jpnlGrpA.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupo A"));
         jpnlGrpA.setName("jpnlGrpA"); // NOI18N
         jpnlGrpA.setOpaque(false);
 
-        lblGAT1.setText("Time 1");
+        lblGAT1.setText("            ");
         lblGAT1.setName("lblGAT1"); // NOI18N
 
-        lblGAT2.setText("Time 2");
+        lblGAT2.setText("          ");
         lblGAT2.setName("lblGAT2"); // NOI18N
 
-        lblGAT3.setText("Time 3");
+        lblGAT3.setText("          ");
         lblGAT3.setName("lblGAT3"); // NOI18N
 
-        lblGAT4.setText("Time 4");
+        lblGAT4.setText("          ");
         lblGAT4.setName("lblGAT4"); // NOI18N
 
-        iconGAT1.setText("Logo 1");
+        iconGAT1.setText("          ");
         iconGAT1.setName("iconGAT1"); // NOI18N
 
-        iconGAT2.setText("Logo 2");
+        iconGAT2.setText("          ");
         iconGAT2.setName("iconGAT2"); // NOI18N
 
-        iconGAT73.setText("Logo 3");
+        iconGAT73.setText("          ");
         iconGAT73.setName("iconGAT3"); // NOI18N
 
-        iconGAT4.setText("Logo 4");
+        iconGAT4.setText("          ");
         iconGAT4.setName("iconGAT4"); // NOI18N
 
         javax.swing.GroupLayout jpnlGrpALayout = new javax.swing.GroupLayout(jpnlGrpA);
@@ -611,28 +727,28 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlGrpB.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupo B"));
         jpnlGrpB.setName("jnplGrpB"); // NOI18N
 
-        lblGBT1.setText("Time 1");
+        lblGBT1.setText("          ");
         lblGBT1.setName("lblGBT1"); // NOI18N
 
-        lblGBT2.setText("Time 2");
+        lblGBT2.setText("          ");
         lblGBT2.setName("lblGBT2"); // NOI18N
 
-        lblGBT3.setText("Time 3");
+        lblGBT3.setText("          ");
         lblGBT3.setName("lblGBT3"); // NOI18N
 
-        lblGBT4.setText("Time 4");
+        lblGBT4.setText("          ");
         lblGBT4.setName("lblGBT4"); // NOI18N
 
-        iconGBT1.setText("Logo 1");
+        iconGBT1.setText("          ");
         iconGBT1.setName("iconGBT1"); // NOI18N
 
-        iconGBT2.setText("Logo 2");
+        iconGBT2.setText("          ");
         iconGBT2.setName("iconGBT2"); // NOI18N
 
-        iconGBT3.setText("Logo 3");
+        iconGBT3.setText("          ");
         iconGBT3.setName("iconGBT3"); // NOI18N
 
-        iconGBT4.setText("Logo 4");
+        iconGBT4.setText("          ");
         iconGBT4.setName("iconGBT4"); // NOI18N
 
         javax.swing.GroupLayout jpnlGrpBLayout = new javax.swing.GroupLayout(jpnlGrpB);
@@ -685,28 +801,28 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlGrpC.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupo C"));
         jpnlGrpC.setName("jpnlGrpC"); // NOI18N
 
-        lblGCT1.setText("Time 1");
+        lblGCT1.setText("          ");
         lblGCT1.setName("lblGCT1"); // NOI18N
 
-        lblGCT2.setText("Time 2");
+        lblGCT2.setText("          ");
         lblGCT2.setName("lblGCT2"); // NOI18N
 
-        lblGCT3.setText("Time 3");
+        lblGCT3.setText("          ");
         lblGCT3.setName("lblGCT3"); // NOI18N
 
-        lblGCT4.setText("Time 4");
+        lblGCT4.setText("          ");
         lblGCT4.setName("lblGCT4"); // NOI18N
 
-        iconGCT1.setText("Logo 1");
+        iconGCT1.setText("          ");
         iconGCT1.setName("iconGCT1"); // NOI18N
 
-        iconGCT2.setText("Logo 2");
+        iconGCT2.setText("          ");
         iconGCT2.setName("iconGCT2"); // NOI18N
 
-        iconGCT3.setText("Logo 3");
+        iconGCT3.setText("          ");
         iconGCT3.setName("iconGCT3"); // NOI18N
 
-        iconGCT4.setText("Logo 4");
+        iconGCT4.setText("          ");
         iconGCT4.setName("iconGCT4"); // NOI18N
 
         javax.swing.GroupLayout jpnlGrpCLayout = new javax.swing.GroupLayout(jpnlGrpC);
@@ -759,28 +875,28 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlGrpD.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupo D"));
         jpnlGrpD.setName("jpnlGrpD"); // NOI18N
 
-        lblGDT1.setText("Time 1");
+        lblGDT1.setText("          ");
         lblGDT1.setName("lblGDT1"); // NOI18N
 
-        lblGDT2.setText("Time 2");
+        lblGDT2.setText("          ");
         lblGDT2.setName("lblGDT2"); // NOI18N
 
-        lblGDT3.setText("Time 3");
+        lblGDT3.setText("          ");
         lblGDT3.setName("lblGDT3"); // NOI18N
 
-        lblGDT4.setText("Time 4");
+        lblGDT4.setText("          ");
         lblGDT4.setName("lblGDT4"); // NOI18N
 
-        iconGDT1.setText("Logo 1");
+        iconGDT1.setText("          ");
         iconGDT1.setName("iconGDT1"); // NOI18N
 
-        iconGDT2.setText("Logo 2");
+        iconGDT2.setText("          ");
         iconGDT2.setName("iconGDT2"); // NOI18N
 
-        iconGDT3.setText("Logo 3");
+        iconGDT3.setText("          ");
         iconGDT3.setName("iconGDT3"); // NOI18N
 
-        iconGDT4.setText("Logo 4");
+        iconGDT4.setText("          ");
         iconGDT4.setName("iconGDT4"); // NOI18N
 
         javax.swing.GroupLayout jpnlGrpDLayout = new javax.swing.GroupLayout(jpnlGrpD);
@@ -833,28 +949,28 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlGrpE.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupo E"));
         jpnlGrpE.setName("jpnlGrpE"); // NOI18N
 
-        lblGET1.setText("Time 1");
+        lblGET1.setText("          ");
         lblGET1.setName("lblGET1"); // NOI18N
 
-        lblGET2.setText("Time 2");
+        lblGET2.setText("          ");
         lblGET2.setName("lblGET2"); // NOI18N
 
-        lblGET3.setText("Time 3");
+        lblGET3.setText("          ");
         lblGET3.setName("lblGET3"); // NOI18N
 
-        lblGET4.setText("Time 4");
+        lblGET4.setText("          ");
         lblGET4.setName("lblGET4"); // NOI18N
 
-        iconGET1.setText("Logo 1");
+        iconGET1.setText("          ");
         iconGET1.setName("iconGET1"); // NOI18N
 
-        iconGET2.setText("Logo 2");
+        iconGET2.setText("          ");
         iconGET2.setName("iconGET2"); // NOI18N
 
-        iconGET3.setText("Logo 3");
+        iconGET3.setText("          ");
         iconGET3.setName("iconGET3"); // NOI18N
 
-        iconGET4.setText("Logo 4");
+        iconGET4.setText("          ");
         iconGET4.setName("iconGET4"); // NOI18N
 
         javax.swing.GroupLayout jpnlGrpELayout = new javax.swing.GroupLayout(jpnlGrpE);
@@ -907,28 +1023,28 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlGrpF.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupo F"));
         jpnlGrpF.setName("jpnlGrpF"); // NOI18N
 
-        lblGFT1.setText("Time 1");
+        lblGFT1.setText("          ");
         lblGFT1.setName("lblGFT1"); // NOI18N
 
-        lblGFT2.setText("Time 2");
+        lblGFT2.setText("          ");
         lblGFT2.setName("lblGFT2"); // NOI18N
 
-        lblGFT3.setText("Time 3");
+        lblGFT3.setText("          ");
         lblGFT3.setName("lblGFT3"); // NOI18N
 
-        lblGFT4.setText("Time 4");
+        lblGFT4.setText("          ");
         lblGFT4.setName("lblGFT4"); // NOI18N
 
-        iconGFT1.setText("Logo 1");
+        iconGFT1.setText("          ");
         iconGFT1.setName("iconGFT1"); // NOI18N
 
-        iconGFT2.setText("Logo 2");
+        iconGFT2.setText("          ");
         iconGFT2.setName("iconGFT2"); // NOI18N
 
-        iconGFT3.setText("Logo 3");
+        iconGFT3.setText("          ");
         iconGFT3.setName("iconGFT3"); // NOI18N
 
-        iconGFT4.setText("Logo 4");
+        iconGFT4.setText("          ");
         iconGFT4.setName("iconGFT4"); // NOI18N
 
         javax.swing.GroupLayout jpnlGrpFLayout = new javax.swing.GroupLayout(jpnlGrpF);
@@ -981,28 +1097,28 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlGrpG.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupo G"));
         jpnlGrpG.setName("jpnlGrpG"); // NOI18N
 
-        lblGGT1.setText("Time 1");
+        lblGGT1.setText("          ");
         lblGGT1.setName("lblGGT1"); // NOI18N
 
-        lblGGT2.setText("Time 2");
+        lblGGT2.setText("          ");
         lblGGT2.setName("lblGGT2"); // NOI18N
 
-        lblGGT3.setText("Time 3");
+        lblGGT3.setText("          ");
         lblGGT3.setName("lblGGT3"); // NOI18N
 
-        lblGGT4.setText("Time 4");
+        lblGGT4.setText("          ");
         lblGGT4.setName("lblGGT4"); // NOI18N
 
-        iconGGT1.setText("Logo 1");
+        iconGGT1.setText("          ");
         iconGGT1.setName("iconGGT1"); // NOI18N
 
-        iconGGT2.setText("Logo 2");
+        iconGGT2.setText("          ");
         iconGGT2.setName("iconGGT2"); // NOI18N
 
-        iconGGT3.setText("Logo 3");
+        iconGGT3.setText("          ");
         iconGGT3.setName("iconGGT3"); // NOI18N
 
-        iconGGT4.setText("Logo 4");
+        iconGGT4.setText("          ");
         iconGGT4.setName("iconGGT4"); // NOI18N
 
         javax.swing.GroupLayout jpnlGrpGLayout = new javax.swing.GroupLayout(jpnlGrpG);
@@ -1055,28 +1171,28 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlGrpH.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupo H"));
         jpnlGrpH.setName("jpnlGrpH"); // NOI18N
 
-        lblGHT1.setText("Time 1");
+        lblGHT1.setText("          ");
         lblGHT1.setName("lblGHT1"); // NOI18N
 
-        lblGHT2.setText("Time 2");
+        lblGHT2.setText("          ");
         lblGHT2.setName("lblGHT2"); // NOI18N
 
-        lblGHT3.setText("Time 3");
+        lblGHT3.setText("          ");
         lblGHT3.setName("lblGHT3"); // NOI18N
 
-        lblGHT4.setText("Time 4");
+        lblGHT4.setText("          ");
         lblGHT4.setName("lblGHT4"); // NOI18N
 
-        iconGHT1.setText("Logo 1");
+        iconGHT1.setText("          ");
         iconGHT1.setName("iconGHT1"); // NOI18N
 
-        iconGHT2.setText("Logo 2");
+        iconGHT2.setText("          ");
         iconGHT2.setName("iconGHT2"); // NOI18N
 
-        iconGHT3.setText("Logo 3");
+        iconGHT3.setText("          ");
         iconGHT3.setName("iconGHT3"); // NOI18N
 
-        iconGHT4.setText("Logo 4");
+        iconGHT4.setText("          ");
         iconGHT4.setName("iconGHT4"); // NOI18N
 
         javax.swing.GroupLayout jpnlGrpHLayout = new javax.swing.GroupLayout(jpnlGrpH);
@@ -1128,13 +1244,13 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
 
         jpnlOitavas1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        lblO1T1.setText("Time 1");
+        lblO1T1.setText("          ");
 
-        lblO1T2.setText("Time 2");
+        lblO1T2.setText("          ");
 
-        iconO1T1.setText("Logo 1");
+        iconO1T1.setText("          ");
 
-        iconO1T2.setText("Logo 2");
+        iconO1T2.setText("          ");
 
         placarO1T1.setText("0");
 
@@ -1149,7 +1265,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlOitavas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblO1T1)
                     .addComponent(lblO1T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addGroup(jpnlOitavas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconO1T1)
                     .addComponent(iconO1T2))
@@ -1157,7 +1273,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlOitavas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(placarO1T1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(placarO1T2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jpnlOitavas1Layout.setVerticalGroup(
             jpnlOitavas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1177,13 +1293,13 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
 
         jpnlOitavas2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        lblO2T1.setText("Time 1");
+        lblO2T1.setText("          ");
 
-        iconO2T1.setText("Logo 1");
+        iconO2T1.setText("          ");
 
-        lblO2T2.setText("Time 2");
+        lblO2T2.setText("          ");
 
-        iconO2T2.setText("Logo 2");
+        iconO2T2.setText("          ");
 
         placarO2T1.setText("0");
 
@@ -1213,30 +1329,27 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
             .addGroup(jpnlOitavas2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jpnlOitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpnlOitavas2Layout.createSequentialGroup()
-                        .addComponent(iconO2T1)
-                        .addGap(18, 18, 18)
-                        .addComponent(iconO2T2))
-                    .addGroup(jpnlOitavas2Layout.createSequentialGroup()
-                        .addGroup(jpnlOitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblO2T1)
-                            .addComponent(placarO2T1))
-                        .addGap(18, 18, 18)
-                        .addGroup(jpnlOitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(placarO2T2)
-                            .addComponent(lblO2T2))))
+                    .addComponent(iconO2T1)
+                    .addGroup(jpnlOitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblO2T1)
+                        .addComponent(placarO2T1)))
+                .addGap(18, 18, 18)
+                .addGroup(jpnlOitavas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(iconO2T2)
+                    .addComponent(placarO2T2)
+                    .addComponent(lblO2T2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jpnlOitavas3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        lblO3T1.setText("Time 1");
+        lblO3T1.setText("          ");
 
-        iconO3T1.setText("Logo 1");
+        iconO3T1.setText("          ");
 
-        lblO3T2.setText("Time 2");
+        lblO3T2.setText("          ");
 
-        iconO3T2.setText("Logo 2");
+        iconO3T2.setText("          ");
 
         placarO3T1.setText("0");
 
@@ -1283,13 +1396,13 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
 
         placarO4T1.setText("0");
 
-        lblO4T1.setText("Time 1");
+        lblO4T1.setText("          ");
 
-        iconO4T1.setText("Logo 1");
+        iconO4T1.setText("          ");
 
-        iconO4T2.setText("Logo 2");
+        iconO4T2.setText("          ");
 
-        lblO4T2.setText("Time 2");
+        lblO4T2.setText("          ");
 
         javax.swing.GroupLayout jpnlOitavas4Layout = new javax.swing.GroupLayout(jpnlOitavas4);
         jpnlOitavas4.setLayout(jpnlOitavas4Layout);
@@ -1300,7 +1413,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlOitavas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblO4T1)
                     .addComponent(lblO4T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
                 .addGroup(jpnlOitavas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconO4T1)
                     .addComponent(iconO4T2))
@@ -1334,13 +1447,13 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlOitavas5.setName("jpnlOitavas5"); // NOI18N
         jpnlOitavas5.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblO5T1.setText("Time 1");
+        lblO5T1.setText("          ");
 
-        iconO5T1.setText("Logo 1");
+        iconO5T1.setText("          ");
 
-        lblO5T2.setText("Time 2");
+        lblO5T2.setText("          ");
 
-        iconO5T2.setText("Logo 2");
+        iconO5T2.setText("          ");
 
         placarO5T1.setText("0");
 
@@ -1355,7 +1468,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlOitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblO5T1)
                     .addComponent(lblO5T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addGroup(jpnlOitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jpnlOitavas5Layout.createSequentialGroup()
                         .addComponent(iconO5T1)
@@ -1370,32 +1483,30 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlOitavas5Layout.setVerticalGroup(
             jpnlOitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlOitavas5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jpnlOitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlOitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblO5T2)
-                        .addComponent(iconO5T2)
-                        .addComponent(placarO5T2))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlOitavas5Layout.createSequentialGroup()
-                        .addGroup(jpnlOitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblO5T1)
-                            .addComponent(iconO5T1)
-                            .addComponent(placarO5T1))
-                        .addGap(36, 36, 36)))
-                .addGap(32, 32, 32))
+                .addContainerGap(22, Short.MAX_VALUE)
+                .addGroup(jpnlOitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblO5T1)
+                    .addComponent(iconO5T1)
+                    .addComponent(placarO5T1))
+                .addGap(18, 18, 18)
+                .addGroup(jpnlOitavas5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblO5T2)
+                    .addComponent(iconO5T2)
+                    .addComponent(placarO5T2))
+                .addGap(18, 18, 18))
         );
 
         jpnlOitavas6.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jpnlOitavas6.setName("jpnlOitavas6"); // NOI18N
         jpnlOitavas6.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblO6T1.setText("Time 1");
+        lblO6T1.setText("          ");
 
-        iconO6T1.setText("Logo 1");
+        iconO6T1.setText("          ");
 
-        lblO6T2.setText("Time 2");
+        lblO6T2.setText("          ");
 
-        iconO6T2.setText("Logo 2");
+        iconO6T2.setText("          ");
 
         placarO6T1.setText("0");
 
@@ -1410,7 +1521,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlOitavas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblO6T1)
                     .addComponent(lblO6T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addGroup(jpnlOitavas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconO6T1)
                     .addComponent(iconO6T2))
@@ -1423,7 +1534,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlOitavas6Layout.setVerticalGroup(
             jpnlOitavas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlOitavas6Layout.createSequentialGroup()
-                .addContainerGap(8, Short.MAX_VALUE)
+                .addGap(21, 21, 21)
                 .addGroup(jpnlOitavas6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblO6T1)
                     .addComponent(iconO6T1)
@@ -1433,20 +1544,20 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                     .addComponent(lblO6T2)
                     .addComponent(iconO6T2)
                     .addComponent(placarO6T2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(30, 30, 30))
+                .addGap(17, 17, 17))
         );
 
         jpnlOitavas7.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jpnlOitavas7.setName("jpnlOitavas7"); // NOI18N
         jpnlOitavas7.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblO7T1.setText("Time 1");
+        lblO7T1.setText("          ");
 
-        iconO7T1.setText("Logo 1");
+        iconO7T1.setText("          ");
 
-        lblO7T2.setText("Time 2");
+        lblO7T2.setText("          ");
 
-        iconO7T2.setText("Logo 2");
+        iconO7T2.setText("          ");
 
         placarO7T1.setText("0");
 
@@ -1461,7 +1572,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlOitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblO7T2)
                     .addComponent(lblO7T1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
                 .addGroup(jpnlOitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconO7T2)
                     .addComponent(iconO7T1))
@@ -1474,30 +1585,30 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlOitavas7Layout.setVerticalGroup(
             jpnlOitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlOitavas7Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(25, Short.MAX_VALUE)
                 .addGroup(jpnlOitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblO7T1)
                     .addComponent(iconO7T1)
                     .addComponent(placarO7T1))
-                .addGap(20, 20, 20)
+                .addGap(18, 18, 18)
                 .addGroup(jpnlOitavas7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblO7T2)
                     .addComponent(iconO7T2)
                     .addComponent(placarO7T2))
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addGap(18, 18, 18))
         );
 
         jpnlOitavas8.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jpnlOitavas8.setName("jpnlOitavas8"); // NOI18N
         jpnlOitavas8.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblO8T1.setText("Time 1");
+        lblO8T1.setText("          ");
 
-        iconO8T1.setText("Logo 1");
+        iconO8T1.setText("          ");
 
-        lblO8T2.setText("Time 2");
+        lblO8T2.setText("          ");
 
-        iconO8T2.setText("Logo 2");
+        iconO8T2.setText("          ");
 
         placarO8T1.setText("0");
 
@@ -1512,7 +1623,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlOitavas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblO8T1)
                     .addComponent(lblO8T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addGroup(jpnlOitavas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconO8T1)
                     .addComponent(iconO8T2))
@@ -1525,7 +1636,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlOitavas8Layout.setVerticalGroup(
             jpnlOitavas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlOitavas8Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(24, Short.MAX_VALUE)
                 .addGroup(jpnlOitavas8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblO8T1)
                     .addComponent(iconO8T1)
@@ -1535,20 +1646,20 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                     .addComponent(lblO8T2)
                     .addComponent(iconO8T2)
                     .addComponent(placarO8T2))
-                .addGap(0, 36, Short.MAX_VALUE))
+                .addGap(18, 18, 18))
         );
 
         jpnlQuartas1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jpnlQuartas1.setName("jpnlQuartas1"); // NOI18N
         jpnlQuartas1.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblQ1T1.setText("Time 1");
+        lblQ1T1.setText("          ");
 
-        iconQ1T1.setText("Logo 1");
+        iconQ1T1.setText("          ");
 
-        lblQ1T2.setText("Time 2");
+        lblQ1T2.setText("          ");
 
-        iconQ1T2.setText("Logo 2");
+        iconQ1T2.setText("          ");
 
         placarQ1T1.setText("0");
 
@@ -1562,7 +1673,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblQ1T1)
                     .addComponent(lblQ1T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addGroup(jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconQ1T1)
                     .addComponent(iconQ1T2))
@@ -1575,31 +1686,31 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlQuartas1Layout.setVerticalGroup(
             jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlQuartas1Layout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addGroup(jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblQ1T1)
+                    .addComponent(iconQ1T1)
+                    .addComponent(placarQ1T1))
+                .addGap(18, 18, 18)
                 .addGroup(jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(iconQ1T2)
                         .addComponent(placarQ1T2))
-                    .addGroup(jpnlQuartas1Layout.createSequentialGroup()
-                        .addGroup(jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblQ1T1)
-                            .addComponent(iconQ1T1)
-                            .addComponent(placarQ1T1))
-                        .addGap(21, 21, 21)
-                        .addComponent(lblQ1T2)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                    .addComponent(lblQ1T2))
+                .addGap(16, 16, 16))
         );
 
         jpnlQuartas2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jpnlQuartas2.setName("jpnlQuartas2"); // NOI18N
         jpnlQuartas2.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblQ2T1.setText("Time 1");
+        lblQ2T1.setText("          ");
 
-        iconQ2T1.setText("Logo 1");
+        iconQ2T1.setText("          ");
 
-        lblQ2T2.setText("Time 2");
+        lblQ2T2.setText("          ");
 
-        iconQ2T2.setText("Logo 2");
+        iconQ2T2.setText("          ");
 
         placarQ2T1.setText("0");
 
@@ -1614,7 +1725,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlQuartas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblQ2T1)
                     .addComponent(lblQ2T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
                 .addGroup(jpnlQuartas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconQ2T1)
                     .addComponent(iconQ2T2))
@@ -1626,8 +1737,8 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         );
         jpnlQuartas2Layout.setVerticalGroup(
             jpnlQuartas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jpnlQuartas2Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlQuartas2Layout.createSequentialGroup()
+                .addContainerGap(27, Short.MAX_VALUE)
                 .addGroup(jpnlQuartas2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblQ2T1)
                     .addComponent(iconQ2T1)
@@ -1637,20 +1748,20 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                     .addComponent(lblQ2T2)
                     .addComponent(iconQ2T2)
                     .addComponent(placarQ2T2))
-                .addGap(36, 36, 36))
+                .addGap(25, 25, 25))
         );
 
         jpnlQuartas3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jpnlQuartas3.setName("jpnlQuartas3"); // NOI18N
         jpnlQuartas3.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblQ3T1.setText("Time 1");
+        lblQ3T1.setText("          ");
 
-        iconQ3T1.setText("Logo 1");
+        iconQ3T1.setText("          ");
 
-        lblQ3T2.setText("Time 2");
+        lblQ3T2.setText("          ");
 
-        iconQ3T2.setText("Logo 2");
+        iconQ3T2.setText("          ");
 
         placarQ3T1.setText("0");
 
@@ -1665,7 +1776,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlQuartas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblQ3T2)
                     .addComponent(lblQ3T1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(jpnlQuartas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconQ3T2)
                     .addComponent(iconQ3T1))
@@ -1678,7 +1789,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlQuartas3Layout.setVerticalGroup(
             jpnlQuartas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlQuartas3Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addGroup(jpnlQuartas3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblQ3T1)
                     .addComponent(iconQ3T1)
@@ -1688,20 +1799,20 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                     .addComponent(lblQ3T2)
                     .addComponent(iconQ3T2)
                     .addComponent(placarQ3T2))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addGap(18, 18, 18))
         );
 
         jpnlQuartas4.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jpnlQuartas4.setName("jpnlQuartas4"); // NOI18N
         jpnlQuartas4.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblQ4T1.setText("Time 1");
+        lblQ4T1.setText("          ");
 
-        iconQ4T1.setText("Logo 1");
+        iconQ4T1.setText("          ");
 
-        lblQ4T2.setText("Time 2");
+        lblQ4T2.setText("          ");
 
-        iconQ4T2.setText("Logo 2");
+        iconQ4T2.setText("          ");
 
         placarQ4T1.setText("0");
 
@@ -1716,7 +1827,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlQuartas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblQ4T2)
                     .addComponent(lblQ4T1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(jpnlQuartas4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconQ4T2)
                     .addComponent(iconQ4T1))
@@ -1746,13 +1857,13 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlSemi1.setName("jpnlSemi1"); // NOI18N
         jpnlSemi1.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblS1T1.setText("Time 1");
+        lblS1T1.setText("          ");
 
-        iconS1T1.setText("Logo 1");
+        iconS1T1.setText("          ");
 
-        lblS1T2.setText("Time 2");
+        lblS1T2.setText("          ");
 
-        iconS1T2.setText("Logo 2");
+        iconS1T2.setText("          ");
 
         placarS1T1.setText("0");
 
@@ -1767,7 +1878,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlSemi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblS1T1)
                     .addComponent(lblS1T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(jpnlSemi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconS1T1)
                     .addComponent(iconS1T2))
@@ -1780,12 +1891,12 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlSemi1Layout.setVerticalGroup(
             jpnlSemi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlSemi1Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addGroup(jpnlSemi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblS1T1)
                     .addComponent(iconS1T1)
                     .addComponent(placarS1T1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(jpnlSemi1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblS1T2)
                     .addComponent(iconS1T2)
@@ -1797,13 +1908,13 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlSemi2.setName("jpnlSemi2"); // NOI18N
         jpnlSemi2.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblS2T1.setText("Time 1");
+        lblS2T1.setText("          ");
 
-        iconS2T1.setText("Logo 1");
+        iconS2T1.setText("          ");
 
-        lblS2T2.setText("Time 2");
+        lblS2T2.setText("          ");
 
-        iconS2T2.setText("Logo 2");
+        iconS2T2.setText("          ");
 
         placarS2T1.setText("0");
 
@@ -1818,7 +1929,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGroup(jpnlSemi2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblS2T1)
                     .addComponent(lblS2T2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(jpnlSemi2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconS2T1)
                     .addComponent(iconS2T2))
@@ -1831,12 +1942,12 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlSemi2Layout.setVerticalGroup(
             jpnlSemi2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlSemi2Layout.createSequentialGroup()
-                .addGap(5, 5, 5)
+                .addContainerGap(19, Short.MAX_VALUE)
                 .addGroup(jpnlSemi2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblS2T1)
                     .addComponent(iconS2T1)
                     .addComponent(placarS2T1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addGroup(jpnlSemi2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblS2T2)
                     .addComponent(iconS2T2)
@@ -1848,13 +1959,13 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlFinal.setName("jpnlFinal"); // NOI18N
         jpnlFinal.setPreferredSize(new java.awt.Dimension(104, 76));
 
-        lblF1T1.setText("Time 1");
+        lblF1T1.setText("          ");
 
-        iconF1T1.setText("Logo 1");
+        iconF1T1.setText("          ");
 
-        lblF1T2.setText("Time 2");
+        lblF1T2.setText("          ");
 
-        iconF1T2.setText("Logo 2");
+        iconF1T2.setText("          ");
 
         placarF1T1.setText("0");
 
@@ -1873,19 +1984,21 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                         .addContainerGap()
                         .addGroup(jpnlFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblF1T1)
-                            .addComponent(lblF1T2))
-                        .addGap(23, 23, 23)
-                        .addGroup(jpnlFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(iconF1T1)
-                            .addComponent(iconF1T2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jpnlFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(placarF1T1, javax.swing.GroupLayout.DEFAULT_SIZE, 14, Short.MAX_VALUE)
-                            .addComponent(placarF1T2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(lblF1T2)))
                     .addGroup(jpnlFinalLayout.createSequentialGroup()
                         .addGap(60, 60, 60)
                         .addComponent(lblFinal)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addGroup(jpnlFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlFinalLayout.createSequentialGroup()
+                        .addComponent(iconF1T2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(placarF1T2, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlFinalLayout.createSequentialGroup()
+                        .addComponent(iconF1T1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(placarF1T1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         jpnlFinalLayout.setVerticalGroup(
             jpnlFinalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1975,31 +2088,32 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                                 .addGap(251, 251, 251))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlContainerLayout.createSequentialGroup()
                                 .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jpnlContainerLayout.createSequentialGroup()
-                                        .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jpnlContainerLayout.createSequentialGroup()
-                                                .addGap(125, 125, 125)
-                                                .addComponent(lblSemis1))
-                                            .addGroup(jpnlContainerLayout.createSequentialGroup()
-                                                .addGap(76, 76, 76)
-                                                .addComponent(jpnlFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(99, 99, 99)
-                                        .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jpnlQuartas4, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jpnlQuartas3, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(0, 0, 0))
-                                    .addGroup(jpnlContainerLayout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jpnlSemi1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jpnlSemi2, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpnlContainerLayout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
                                         .addComponent(jlblBandeira, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(lblTaca2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(120, 120, 120)))
+                                        .addGap(120, 120, 120))
+                                    .addGroup(jpnlContainerLayout.createSequentialGroup()
+                                        .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jpnlContainerLayout.createSequentialGroup()
+                                                .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(jpnlContainerLayout.createSequentialGroup()
+                                                        .addGap(125, 125, 125)
+                                                        .addComponent(lblSemis1))
+                                                    .addGroup(jpnlContainerLayout.createSequentialGroup()
+                                                        .addGap(76, 76, 76)
+                                                        .addComponent(jpnlFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(99, 99, 99)
+                                                .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jpnlQuartas4, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jpnlQuartas3, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addGroup(jpnlContainerLayout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jpnlSemi1, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jpnlSemi2, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(0, 0, Short.MAX_VALUE)))
                                 .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jpnlOitavas6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jpnlOitavas7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2063,12 +2177,12 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                     .addGroup(jpnlContainerLayout.createSequentialGroup()
                         .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(jpnlContainerLayout.createSequentialGroup()
-                                .addGap(190, 190, 190)
+                                .addGap(187, 187, 187)
                                 .addComponent(lblQuartas1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jpnlQuartas1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jpnlQuartas2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jpnlQuartas2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jpnlContainerLayout.createSequentialGroup()
                                 .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jpnlContainerLayout.createSequentialGroup()
@@ -2106,14 +2220,11 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addGap(49, 49, 49)
                 .addComponent(lblOitavas2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jpnlContainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpnlContainerLayout.createSequentialGroup()
-                        .addComponent(jpnlOitavas5, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58)
-                        .addComponent(jpnlOitavas6, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpnlContainerLayout.createSequentialGroup()
-                        .addGap(327, 327, 327)
-                        .addComponent(jpnlOitavas7, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addComponent(jpnlOitavas5, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(58, 58, 58)
+                .addComponent(jpnlOitavas6, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(72, 72, 72)
+                .addComponent(jpnlOitavas7, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jpnlOitavas8, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(116, 116, 116))
@@ -2127,7 +2238,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jpnlContainer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

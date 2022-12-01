@@ -28,7 +28,7 @@
               <Component id="jPanel8" min="-2" pref="99" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jpnlContainer" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="23" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -142,37 +142,40 @@
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="102" attributes="0">
-                                                  <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
-                                                  <Component id="lblSemis1" min="-2" max="-2" attributes="0"/>
-                                              </Group>
-                                              <Group type="102" alignment="0" attributes="0">
-                                                  <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
-                                                  <Component id="jpnlFinal" min="-2" pref="166" max="-2" attributes="0"/>
-                                              </Group>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jpnlQuartas4" min="-2" pref="164" max="-2" attributes="0"/>
-                                              <Component id="jpnlQuartas3" min="-2" pref="164" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="jpnlSemi1" min="-2" pref="142" max="-2" attributes="0"/>
-                                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          <Component id="jpnlSemi2" min="-2" pref="147" max="-2" attributes="0"/>
-                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                      </Group>
                                       <Group type="102" alignment="1" attributes="0">
                                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                           <Component id="jlblBandeira" min="-2" pref="336" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
                                           <Component id="lblTaca2" min="-2" pref="49" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" attributes="0">
+                                                          <EmptySpace min="-2" pref="125" max="-2" attributes="0"/>
+                                                          <Component id="lblSemis1" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                                                          <Component id="jpnlFinal" min="-2" pref="166" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jpnlQuartas4" min="-2" pref="164" max="-2" attributes="0"/>
+                                                      <Component id="jpnlQuartas3" min="-2" pref="164" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="jpnlSemi1" min="-2" pref="142" max="-2" attributes="0"/>
+                                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                                  <Component id="jpnlSemi2" min="-2" pref="157" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -257,13 +260,13 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace min="-2" pref="190" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
                                   <Component id="lblQuartas1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jpnlQuartas1" min="-2" pref="82" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jpnlQuartas2" min="-2" pref="94" max="-2" attributes="0"/>
+                                  <Component id="jpnlQuartas2" min="-2" pref="104" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
@@ -319,17 +322,11 @@
                   <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                   <Component id="lblOitavas2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jpnlOitavas5" min="-2" pref="92" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                          <Component id="jpnlOitavas6" min="-2" pref="90" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="-2" pref="327" max="-2" attributes="0"/>
-                          <Component id="jpnlOitavas7" min="-2" pref="95" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+                  <Component id="jpnlOitavas5" min="-2" pref="92" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                  <Component id="jpnlOitavas6" min="-2" pref="105" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                  <Component id="jpnlOitavas7" min="-2" pref="95" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
                   <Component id="jpnlOitavas8" min="-2" pref="94" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
@@ -380,9 +377,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblFootCupIcon">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="D:\lp_dir\USJT\2022_2\ProjetoA3\src\main\java\projetoa3\footcup2022\Imagens\logo.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value=" "/>
           </Properties>
         </Component>
@@ -459,49 +453,49 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblGAT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="            "/>
                 <Property name="name" type="java.lang.String" value="lblGAT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGAT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGAT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGAT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGAT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGAT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGAT4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGAT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGAT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGAT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGAT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGAT73">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGAT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGAT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGAT4" noResource="true"/>
               </Properties>
             </Component>
@@ -579,49 +573,49 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblGBT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGBT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGBT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGBT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGBT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGBT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGBT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGBT4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGBT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGBT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGBT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGBT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGBT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGBT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGBT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGBT4" noResource="true"/>
               </Properties>
             </Component>
@@ -699,49 +693,49 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblGCT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGCT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGCT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGCT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGCT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGCT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGCT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGCT4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGCT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGCT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGCT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGCT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGCT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGCT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGCT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGCT4" noResource="true"/>
               </Properties>
             </Component>
@@ -819,49 +813,49 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblGDT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGDT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGDT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGDT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGDT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGDT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGDT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGDT4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGDT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGDT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGDT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGDT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGDT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGDT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGDT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGDT4" noResource="true"/>
               </Properties>
             </Component>
@@ -939,49 +933,49 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblGET1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGET1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGET2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGET2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGET3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGET3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGET4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGET4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGET1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGET1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGET2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGET2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGET3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGET3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGET4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGET4" noResource="true"/>
               </Properties>
             </Component>
@@ -1059,49 +1053,49 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblGFT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGFT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGFT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGFT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGFT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGFT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGFT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGFT4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGFT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGFT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGFT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGFT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGFT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGFT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGFT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGFT4" noResource="true"/>
               </Properties>
             </Component>
@@ -1179,49 +1173,49 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblGGT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGGT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGGT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGGT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGGT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGGT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGGT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGGT4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGGT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGGT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGGT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGGT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGGT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGGT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGGT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGGT4" noResource="true"/>
               </Properties>
             </Component>
@@ -1299,49 +1293,49 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblGHT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGHT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGHT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGHT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGHT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGHT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblGHT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="lblGHT4" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGHT1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGHT1" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGHT2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGHT2" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGHT3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 3"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGHT3" noResource="true"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconGHT4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 4"/>
+                <Property name="text" type="java.lang.String" value="          "/>
                 <Property name="name" type="java.lang.String" value="iconGHT4" noResource="true"/>
               </Properties>
             </Component>
@@ -1365,7 +1359,7 @@
                           <Component id="lblO1T1" min="-2" max="-2" attributes="0"/>
                           <Component id="lblO1T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="38" max="32767" attributes="0"/>
+                      <EmptySpace pref="43" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconO1T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO1T2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1375,7 +1369,7 @@
                           <Component id="placarO1T1" alignment="0" min="-2" pref="14" max="-2" attributes="0"/>
                           <Component id="placarO1T2" alignment="0" min="-2" pref="14" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <EmptySpace pref="28" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1402,22 +1396,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblO1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblO1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarO1T1">
@@ -1469,22 +1463,17 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="iconO2T1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="iconO2T2" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO2T1" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblO2T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="placarO2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblO2T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="placarO2T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="placarO2T2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lblO2T2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="iconO2T2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO2T2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblO2T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
@@ -1494,22 +1483,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblO2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblO2T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO2T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarO2T1">
@@ -1579,22 +1568,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblO3T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO3T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblO3T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO3T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarO3T1">
@@ -1627,7 +1616,7 @@
                           <Component id="lblO4T1" min="-2" max="-2" attributes="0"/>
                           <Component id="lblO4T2" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="46" max="32767" attributes="0"/>
+                      <EmptySpace pref="57" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconO4T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO4T2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1681,22 +1670,22 @@
             </Component>
             <Component class="javax.swing.JLabel" name="lblO4T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO4T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO4T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblO4T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
           </SubComponents>
@@ -1723,7 +1712,7 @@
                           <Component id="lblO5T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblO5T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="iconO5T1" min="-2" max="-2" attributes="0"/>
@@ -1743,23 +1732,19 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
-                              <Component id="lblO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="iconO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="placarO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="placarO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                          </Group>
+                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO5T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarO5T2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1767,22 +1752,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblO5T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO5T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblO5T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO5T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarO5T1">
@@ -1819,7 +1804,7 @@
                           <Component id="lblO6T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblO6T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconO6T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO6T2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1836,19 +1821,19 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="8" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblO6T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO6T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarO6T1" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblO6T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO6T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarO6T2" alignment="3" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1856,22 +1841,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblO6T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO6T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblO6T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO6T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarO6T1">
@@ -1908,7 +1893,7 @@
                           <Component id="lblO7T2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblO7T1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="42" max="32767" attributes="0"/>
+                      <EmptySpace pref="54" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconO7T2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO7T1" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -1925,19 +1910,19 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace pref="25" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblO7T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO7T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarO7T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblO7T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO7T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarO7T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="35" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -1945,22 +1930,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblO7T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO7T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblO7T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO7T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarO7T1">
@@ -1997,7 +1982,7 @@
                           <Component id="lblO8T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblO8T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="39" max="32767" attributes="0"/>
+                      <EmptySpace pref="51" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconO8T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO8T2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -2013,8 +1998,8 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace pref="24" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblO8T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconO8T1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2026,7 +2011,7 @@
                           <Component id="iconO8T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarO8T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="0" pref="36" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2034,22 +2019,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblO8T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO8T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblO8T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconO8T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarO8T1">
@@ -2085,7 +2070,7 @@
                           <Component id="lblQ1T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblQ1T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconQ1T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconQ1T2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -2102,22 +2087,21 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="iconQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="placarQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
+                          <Group type="103" alignment="1" groupAlignment="3" attributes="0">
                               <Component id="iconQ1T2" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="placarQ1T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="lblQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="placarQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                              <Component id="lblQ1T2" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="lblQ1T2" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="27" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2125,22 +2109,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblQ1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconQ1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblQ1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconQ1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarQ1T1">
@@ -2177,7 +2161,7 @@
                           <Component id="lblQ2T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblQ2T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="44" max="32767" attributes="0"/>
+                      <EmptySpace pref="56" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconQ2T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconQ2T2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -2193,8 +2177,8 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="27" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblQ2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconQ2T1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2206,7 +2190,7 @@
                           <Component id="iconQ2T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarQ2T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2214,22 +2198,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblQ2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconQ2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblQ2T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconQ2T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarQ2T1">
@@ -2266,7 +2250,7 @@
                           <Component id="lblQ3T2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblQ3T1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="49" max="32767" attributes="0"/>
+                      <EmptySpace pref="61" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconQ3T2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconQ3T1" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -2282,8 +2266,8 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblQ3T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconQ3T1" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2295,7 +2279,7 @@
                           <Component id="iconQ3T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarQ3T2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="31" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2303,22 +2287,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblQ3T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconQ3T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblQ3T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconQ3T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarQ3T1">
@@ -2355,7 +2339,7 @@
                           <Component id="lblQ4T2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblQ4T1" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="53" max="32767" attributes="0"/>
+                      <EmptySpace pref="65" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconQ4T2" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconQ4T1" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -2392,22 +2376,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblQ4T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconQ4T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblQ4T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconQ4T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarQ4T1">
@@ -2444,7 +2428,7 @@
                           <Component id="lblS1T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="lblS1T2" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="38" max="32767" attributes="0"/>
+                      <EmptySpace pref="50" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconS1T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS1T2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -2460,14 +2444,14 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblS1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarS1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="32" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblS1T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS1T2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2481,22 +2465,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblS1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconS1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblS1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconS1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarS1T1">
@@ -2533,7 +2517,7 @@
                           <Component id="lblS2T1" min="-2" max="-2" attributes="0"/>
                           <Component id="lblS2T2" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="43" max="32767" attributes="0"/>
+                      <EmptySpace pref="65" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="iconS2T1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS2T2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -2549,14 +2533,14 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblS2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="placarS2T1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="32" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblS2T2" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconS2T2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -2570,22 +2554,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblS2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconS2T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblS2T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconS2T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarS2T1">
@@ -2624,23 +2608,26 @@
                                   <Component id="lblF1T1" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblF1T2" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="iconF1T1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="iconF1T2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="placarF1T1" pref="14" max="32767" attributes="0"/>
-                                  <Component id="placarF1T2" max="32767" attributes="0"/>
-                              </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                               <Component id="lblFinal" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="43" max="32767" attributes="0"/>
+                      <EmptySpace pref="8" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="iconF1T2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="placarF1T2" min="-2" pref="14" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="iconF1T1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="placarF1T1" min="-2" pref="14" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -2668,22 +2655,22 @@
           <SubComponents>
             <Component class="javax.swing.JLabel" name="lblF1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconF1T1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 1"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="lblF1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Time 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="iconF1T2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Logo 2"/>
+                <Property name="text" type="java.lang.String" value="          "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="placarF1T1">
