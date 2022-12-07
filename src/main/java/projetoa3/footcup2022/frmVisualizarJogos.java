@@ -1,14 +1,21 @@
 package projetoa3.footcup2022;
 
+import java.sql.Connection;
 import java.awt.Component;
 import java.sql.SQLException;
 import java.util.HashMap;
+
+import javax.swing.Icon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import projetoa3.footcup2022.DAO.Grupo;
 import projetoa3.footcup2022.DAO.Jogos;
 import projetoa3.footcup2022.DAO.Time;
 import projetoa3.footcup2022.Lib.Comum;
+import projetoa3.footcup2022.Lib.ConexaoBD;
+import java.sql.PreparedStatement;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -21,6 +28,8 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
     public frmVisualizarJogos() {
         initComponents();
         createComponentMap();
+        String imgPath = System.getProperty("user.dir") + "/src/main/java/projetoa3/footcup2022/Imagens/";
+        lblFootCupIcon.setIcon(new ImageIcon(imgPath + "logo.png"));
     }
 
     private void createComponentMap() {
@@ -1686,7 +1695,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
         jpnlQuartas1Layout.setVerticalGroup(
             jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpnlQuartas1Layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+                .addContainerGap(28, Short.MAX_VALUE)
                 .addGroup(jpnlQuartas1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblQ1T1)
                     .addComponent(iconQ1T1)
@@ -2025,7 +2034,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
             public javax.swing.Icon getIcon() {
                 try {
                     return new javax.swing.ImageIcon(
-                        new java.net.URL("file:/D:/lp_dir/USJT/2022_2/ProjetoA3/src/main/java/projetoa3/footcup2022/Imagens/trofeu2.png")
+                        new java.net.URL("file:/C:/Users/digog/Documents/NetBeansProjects/FootCup2022/src/main/java/projetoa3/footcup2022/Imagens/trofeu2.png")
                     );
                 } catch (java.net.MalformedURLException e) {
                 }
@@ -2038,7 +2047,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
             public javax.swing.Icon getIcon() {
                 try {
                     return new javax.swing.ImageIcon(
-                        new java.net.URL("file:/D:/lp_dir/USJT/2022_2/ProjetoA3/src/main/java/projetoa3/footcup2022/Imagens/trofeu2.png")
+                        new java.net.URL("file:/C:/Users/digog/Documents/NetBeansProjects/FootCup2022/src/main/java/projetoa3/footcup2022/Imagens/trofeu2.png")
                     );
                 } catch (java.net.MalformedURLException e) {
                 }
@@ -2180,7 +2189,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
                                 .addGap(187, 187, 187)
                                 .addComponent(lblQuartas1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jpnlQuartas1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jpnlQuartas1, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jpnlQuartas2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jpnlContainerLayout.createSequentialGroup()
@@ -2260,6 +2269,7 @@ public class frmVisualizarJogos extends javax.swing.JFrame {
     private void jbtnSimularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnSimularActionPerformed
         try {
             if (new Time().Listar().size() == 32) {
+                new Grupo().LimpaSql();
                 preparaGrupos();
                 preparaOitavas();
                 preparaQuartas();

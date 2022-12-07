@@ -111,7 +111,20 @@ public class Grupo {
             throw ex;
         }
     }
-
+    
+    public void LimpaSql() throws SQLException {
+        String sql = "UPDATE footcup.grupos SET iqtdpts = 0, iqtdvitorias = 0, iqtdempates = 0, iqtdderrotas = 0, iqtdgolspro = 0, iqtdgolscontra = 0, isaldo = 0, iqtdjogos = 0 WHERE iidtime BETWEEN 1 AND 37;";
+        try {
+        
+            Connection c = ConexaoBD.obtemConexao();
+            PreparedStatement ps = c.prepareStatement(sql);
+            ps.execute();
+            
+        } catch (Exception ex) {
+            throw ex;
+        }
+    }
+    
     public void Incluir() throws SQLException {
         String sql = "SELECT iidtime FROM times ORDER BY iidtime DESC LIMIT 1;";
         try {// Verifica se já existem mais de 4 times dentro do grupo

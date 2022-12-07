@@ -65,7 +65,8 @@ public class frmLogin extends javax.swing.JFrame {
 
         jtxtSenha.setNextFocusableComponent(btnEntrar);
 
-        lblLogo.setIcon(new javax.swing.ImageIcon("D:\\lp_dir\\USJT\\2022_2\\ProjetoA3\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\logo.png")); // NOI18N
+        // lblLogo.setIcon(new javax.swing.ImageIcon("D:\\lp_dir\\USJT\\2022_2\\ProjetoA3\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\logo.png")); // NOI18N
+        lblLogo.setIcon(new javax.swing.ImageIcon("C:\\Users\\digog\\Documents\\NetBeansProjects\\FootCup2022\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\logo.png")); // NOI18N
         lblLogo.setText(" ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

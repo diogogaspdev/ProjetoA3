@@ -50,6 +50,8 @@ public class frmHome extends javax.swing.JFrame {
             jbtnVisualizarJogos.setVisible(false);
         }
 
+        imgPath = System.getProperty("user.dir") + "/src/main/java/projetoa3/footcup2022/Imagens/";
+        lblLogo.setIcon(new ImageIcon(imgPath + "logo.png"));
     }
 
     /**
@@ -175,7 +177,6 @@ public class frmHome extends javax.swing.JFrame {
                 .addGap(9, 9, 9))
         );
 
-        lblLogo.setIcon(new javax.swing.ImageIcon("D:\\lp_dir\\USJT\\2022_2\\ProjetoA3\\src\\main\\java\\projetoa3\\footcup2022\\Imagens\\logo.png")); // NOI18N
         lblLogo.setText(" ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -186,7 +187,7 @@ public class frmHome extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblLogo)
-                .addGap(0, 14, Short.MAX_VALUE))
+                .addGap(0, 354, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

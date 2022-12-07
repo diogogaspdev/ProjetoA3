@@ -264,7 +264,7 @@
                                   <EmptySpace min="-2" pref="187" max="-2" attributes="0"/>
                                   <Component id="lblQuartas1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jpnlQuartas1" min="-2" pref="82" max="-2" attributes="0"/>
+                                  <Component id="jpnlQuartas1" min="-2" pref="96" max="-2" attributes="0"/>
                                   <EmptySpace max="32767" attributes="0"/>
                                   <Component id="jpnlQuartas2" min="-2" pref="104" max="-2" attributes="0"/>
                               </Group>
@@ -2087,7 +2087,7 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="14" max="32767" attributes="0"/>
+                      <EmptySpace pref="28" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="iconQ1T1" alignment="3" min="-2" max="-2" attributes="0"/>
